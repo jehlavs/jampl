@@ -1,3 +1,126 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$base-color: #264796;
+
+
+
+html {
+	vertical-align: baseline;
+}
+
+body {
+	font-family: 'Poppins', sans-serif !important; 
+}
+
+.global-contacts {
+	background-color: #ebebeb;
+}
+
+.navbar {
+	background-color: $base-color;
+}
+
+.nav-item.active {
+	font-weight: bold;
+}
+
+.nav-link {
+	color: #fff;
+}
+
+.masthead {
+	margin-bottom: 45px;
+	background-color: $base-color;
+	height: 90vh;
+	background-image: 
+	linear-gradient(to right bottom, 
+     rgba(38, 71, 150, 0.9),
+     rgba(38, 71, 150, 0.9)),
+		image-url("samuel-zeller-237227-unsplash.jpg");
+	
+	background-size: cover;
+	background-position: top;
+}
+
+#main:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/wp-content/uploads/2010/11/tandem.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+}
+
+.hero {
+  padding: 45px 0;
+  padding-top: 45px;
+	max-width: 960px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.hero__title, .hero__description {
+    margin-bottom: 30px;
+}
+
+.hero__title {
+  font-size: 48px;
+  line-height: 1.04167;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.hero__description {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+a.hero-button, 
+a.hero-button:link, 
+a.hero-button:visited {
+  color: $base-color;
+}
+
+.hero a:link, 
+.hero a:visited {
+  font-weight: bold;
+  color: $base-color;
+}
+
+a.hero-button {
+  display: inline-block;
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+a.hero-button {
+  background-color: #fff;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #d9d9d9;
+  -moz-box-shadow: 0 2px 0 #d9d9d9;
+  box-shadow: 0 2px 0 #d9d9d9;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  padding: 0.3684210526em 2.1578947368em 0.2105263158em 0.8421052632em;
+	margin: 0 0.416666667em 0.416666667em 0;
+	text-transform: uppercase;
+}
