@@ -67,6 +67,7 @@ body {
   transform: scaleX(1);
 }
 
+//navlink
 .active > a:before {
   content: "";
   position: absolute;
@@ -98,6 +99,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  clip-path: 
+  polygon(100% 0px, 
+          100% 27%, 
+          27% 100%, 
+          0% 100%, 
+          0px 0%);
 }
 
 .hero {
@@ -162,29 +170,39 @@ a.hero-button {
   padding: 0.3684210526em 2.1578947368em 0.2105263158em 0.8421052632em;
 	margin: 0 0.416666667em 0.416666667em 0;
 	text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
-.container--skewed {
-  background: #fff;
-  position: relative;
+.content-section__title {
+  font-weight: 700;
 }
 
-.container--skewed:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -36px;
-  width: 100%;
-  height: 60px;
-  background: #fff;
-  -webkit-transform: skewY(2.5deg);
-  -moz-transform: skewY(2.5deg);
-  -ms-transform: skewY(2.5deg);
-  -o-transform: skewY(2.5deg);
-  transform: skewY(2.5deg);
-  -webkit-backface-visibility: hidden;
+.content-section--raligned {
+  text-align: right;
+}
+
+.content-section--centered {
+  text-align: center;
 }
 
 .content-section {
-  position: relative;
+  padding-top: 10rem;
+}
+
+.helper_solid-line--raligned {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 95px;
+  height: 5px;
+  width: 100px;
+  background-color: $base-color;
+}
+
+.helper_solid-line--centered {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 95px;
+  height: 5px;
+  width: 100px;
+  background-color: $base-color;
 }
