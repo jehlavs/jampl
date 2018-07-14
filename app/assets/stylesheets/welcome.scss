@@ -7,6 +7,8 @@ $btn-link: #0087ca;
 $base-color-dark: #002971;
 
 
+//<span class="helper_solid-line--raligned"></span>
+
 html {
 	overflow-y: scroll;
 }
@@ -305,10 +307,6 @@ a.hero-button {
 
 .content-section__title {
   font-weight: 700;
-}
-
-.content-section--raligned {
-  text-align: right;
 }
 
 .content-section--centered {
@@ -793,4 +791,177 @@ img, object {
 .mv5 {
     margin-top: 4rem;
     margin-bottom: 4rem;
+}
+
+
+//index home
+.page-homepage .layout-hero {
+    text-align: left;
+}
+.page-homepage .layout-hero {
+    height: 700px;
+}
+.page-homepage .layout-hero {
+    background-image: 
+  linear-gradient(to right bottom, 
+     rgba(38, 71, 150, 0.9),
+     rgba(38, 71, 150, 0.9)),
+    image-url("samuel-zeller-237227-unsplash.jpg"); 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.page-homepage .layout-hero h1 {
+    font-size: 2.82353rem;
+}
+.page-homepage .layout-hero h1 {
+    text-shadow: rgba(201,144,0,0.2) 0 0 15px;
+}
+
+.page-homepage .layout-hero figure {
+    max-width: 304px;
+    position: relative;
+    z-index: 2;
+}
+
+.page-homepage .layout-feature {
+    overflow: hidden;
+}
+
+
+
+
+
+
+//bim
+.page-self-test .layout-hero {
+    text-align: left;
+}
+.page-self-test .layout-hero {
+    height: 700px;
+}
+.page-self-test .layout-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #FDC830;  /* fallback for old browsers */
+}
+
+.mt6 {
+    margin-top: 8rem;
+}
+.ml5 {
+    margin-left: 4rem;
+}
+
+.page-self-test .layout-hero h1 {
+    font-size: 2.82353rem;
+}
+.page-self-test .layout-hero h1 {
+    text-shadow: rgba(201,144,0,0.2) 0 0 15px;
+}
+.light {
+    color: #fff;
+}
+
+.measure {
+    max-width: 30em;
+}
+
+.tilted-mask::after {
+    background: transparent url(asset-path('skewed-right.svg')) 
+    no-repeat left top;
+    background-size: cover;
+    display: block;
+    content: '';
+    height: 660px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    bottom: 0;
+}
+
+.layout-hero--horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.layout-hero {
+    padding: 6.8rem 2%;
+    text-align: center;
+}
+.tilted-mask {
+    position: relative;
+}
+.mb5 {
+    margin-bottom: 4rem;
+}
+
+.page-self-test .layout-hero figure {
+    max-width: 304px;
+    position: relative;
+    z-index: 2;
+}
+
+.page-self-test .layout-feature {
+    overflow: hidden;
+}
+.layout-feature--vertical {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.layout-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.lh-title {
+    line-height: 1.25;
+}
+.mb1 {
+    margin-bottom: .25rem;
+}
+.f2-ns {
+    font-size: 2.25rem;
+}
+.f3 {
+    font-size: 1.5rem;
+}
+
+.layout-feature--vertical {
+    text-align: center;
+}
+
+
+
+
+
+//continue normalne; bim hotovej
+h2 {
+  color: #265096 !important;
+}
+
+.comp-blue-f {
+    color: #668ea7;
+}
+
+h2, .h2 {
+    font-size: 2.25rem !important;
 }
