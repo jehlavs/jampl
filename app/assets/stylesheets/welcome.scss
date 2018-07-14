@@ -43,8 +43,9 @@ a:focus {
 .global-contacts {
 	background-color: #eceeff;
   display: block;
-  text-align: center;
-  padding: 1rem;
+  padding: 1.2rem 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 [role="banner"] {
@@ -806,7 +807,7 @@ img, object {
   linear-gradient(to right bottom, 
      rgba(38, 71, 150, 0.9),
      rgba(38, 71, 150, 0.9)),
-    image-url("samuel-zeller-237227-unsplash.jpg"); 
+    image-url("img-construction-site.jpg"); 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -831,7 +832,9 @@ img, object {
     overflow: hidden;
 }
 
-
+.page-homepage__text {
+  z-index: 100;
+}
 
 
 
@@ -964,4 +967,88 @@ h2 {
 
 h2, .h2 {
     font-size: 2.25rem !important;
+}
+
+
+//section pod hero
+.layout-feature--reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.layout-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mb6 {
+    margin-bottom: 8rem;
+}
+
+.layout-feature--reverse .layout-feature__text {
+    padding-left: 2vw;
+    padding-right: 6vw;
+}
+.layout-feature__text {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+    padding-left: 6vw;
+    padding-right: 2vw;
+}
+
+.page-home .layout-feature__figure {
+    display: block;
+}
+.layout-feature--reverse .layout-feature__figure {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.layout-feature__figure {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.layout-feature--reverse .layout-feature__figure--wide img {
+    margin-left: -200px;
+}
+.layout-feature__figure--wide img {
+    margin-right: -200px;
+    max-width: calc(100% + 200px);
+}
+.layout-feature__figure img {
+    display: block;
+}
+
+
+.tracked {
+    letter-spacing: .1em;
+}
+.ttu {
+    text-transform: uppercase;
+}
+.mb2 {
+    margin-bottom: .5rem;
+}
+.fw9 {
+    font-weight: 900;
+}
+.f5 {
+    font-size: 1rem;
+}
+
+.f4-ns {
+    font-size: 1.1rem;
 }
