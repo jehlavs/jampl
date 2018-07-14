@@ -45,6 +45,23 @@ a:focus {
   padding: 1rem;
 }
 
+[role="banner"] {
+    margin-bottom: 1.7rem;
+}
+[role="banner"] {
+    padding: 0 2%;
+    position: relative;
+    z-index: 200;
+}
+
+.header--absolute {
+  top: 8vh;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  position: absolute;
+}
+
 .navbar {
     padding: 2.5rem 0 !important;
     font-size: 1em;
@@ -583,124 +600,12 @@ ul.flex-grid, ol.flex-grid {
 
 
 
-//form
-
-.account-form-container {
-    max-width: 26.66667rem;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.account-form {
-    font-size: 1.1rem;
-}
-.box {
-    background-color: #fff;
-    box-shadow: rgba(114, 182, 234, 0.2) 1px 0 30px;
-    border-radius: 8px;
-    padding: 2em 1.5em;
-}
-
-.settings-form__field + .settings-form__field {
-    margin-top: 2.427rem;
-}
-
-.settings-form__field {
-    position: relative;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    border: 1px solid #caeaf6;
-    padding: 5px;
-    border-radius: 7px;
-}
-
-.settings-form__field .settings-form__field__label {
-    color: rgba(39, 95, 106, 0.85);
-    position: absolute;
-    top: -.9em;
-    left: calc(0.75rem - 2px);
-    background-color: #fff;
-    padding: 0 8px;
-    font-size: 1rem;
-}
-
-label[for] {
-    cursor: pointer;
-}
-label {
-    font-weight: bold;
-    display: block;
-    font-size: .9rem;
-}
-
-.settings-form__field .settings-form__field__input {
-    font-size: 1rem;
-    padding: .75rem;
-        padding-right: 0.75rem;
-    padding-right: 5px;
-    border: 0;
-    color: rgba(32, 78, 87, 0.9);
-    box-shadow: none;
-    background-color: #fff;
-    margin: 0;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    border-radius: 7px;
-}
-input[type="text"], input[type="url"], input[type="email"], input[type="password"], input[type="search"], input[type="number"], textarea, .text-field {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    height: auto;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #b4e1f3;
-    border-radius: 4px;
-    padding: .5em .6em;
-    background-color: #fefefe;
-    box-shadow: inset rgba(0, 0, 0, 0.05) 0 1px 2px;
-    transition: color .15s ease-out, opacity .15s ease-out;
-}
-
-.btn.mode--primary {
-    background-color: #3BD788;
-    font-weight: bold;
-}
-.btn[disabled], .btn.disabled {
-    cursor: not-allowed;
-    box-shadow: none;
-    pointer-events: none;
-    -webkit-filter: grayscale(0.6);
-    filter: grayscale(0.6);
-    background-color: #E4EAEB;
-    color: #668ea7;
-}
-
-.account-form-container .account-form-container__footer {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 1.618rem 1.5em;
-    color: #86a6ba;
-}
-
-.account-form-container .account-form-container__footer > :first-child:nth-last-child(1) {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    width: 100%;
-    margin: 0;
-}
+//form order
 
 
-//about
+
+
+//jobs
 .jobs__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -745,6 +650,14 @@ background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, F
     box-shadow: none;
 }
 
+.jobs__collage img {
+    display: block;
+}
+img, object {
+    max-width: 100%;
+    height: auto;
+}
+
 .jobs__collage {
     margin-top: 3px;
 }
@@ -760,6 +673,23 @@ background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, F
 
 .jobs__collage__row__item:not(:last-child) {
     margin-right: 3px;
+}
+
+
+.jobs__collage__column {
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+}
+.jobs__collage__row, .jobs__collage__column {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
 }
 
 .jobs__body {
@@ -794,4 +724,73 @@ background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, F
     font-size: 1.29412rem;
     margin-bottom: .85rem;
     border-bottom: 1px solid rgba(102,142,167,0.2);
+}
+
+
+
+//about
+.page-about__body {
+    max-width: 35rem;
+    width: 90%;
+}
+
+.page-about__hiring {
+    border: 1px solid #eee;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+    border-width: 1px 0;
+    text-align: center;
+    padding: 3.4rem 5%;
+}
+
+.team-members-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.team-members-list .member__image {
+    position: relative;
+    z-index: 10;
+    border-radius: 100%;
+    width: 165px;
+}
+
+.team-members-list .member__name {
+    margin: .5rem 0 0;
+}
+
+.f4 {
+    font-size: 1.1rem;
+}
+
+.team-members-list .member__specialization {
+    color: #668ea7;
+    font-size: .9rem;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+.w-60 {
+    width: 60%;
+}
+.mv5 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
