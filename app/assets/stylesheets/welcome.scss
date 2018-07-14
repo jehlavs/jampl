@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $base-color: #264796;
+$btn-link: #0087ca;
+$base-color-dark: #002971;
+
 
 html {
 	overflow-y: scroll;
@@ -11,6 +14,12 @@ html {
 body {
 	font-family: 'Lato', sans-serif !important; 
 	vertical-align: baseline;
+}
+
+a:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  text-decoration: underline;
 }
 
 .skip-link {
@@ -30,19 +39,18 @@ body {
 }
 
 .global-contacts {
-	background-color: #ebebeb;
+	background-color: #eceeff;
   display: block;
   text-align: center;
   padding: 1rem;
 }
 
 .navbar {
-    padding: 1.5rem 0;
+    padding: 2.5rem 0 !important;
     font-size: 1em;
     max-width: 1440px;
     margin: 0 auto;
 }
-
 
 
 .navbar .dropdown-trigger {
@@ -410,7 +418,7 @@ ul.flex-grid, ol.flex-grid {
 }
 
 .btn.mode--link--muted {
-  color: $base-color;
+  color: $btn-link;
 }
 
 .btn.mode--link--muted:hover {
@@ -495,7 +503,6 @@ ul.flex-grid, ol.flex-grid {
 
 
 .section-get-started {
-    background-image: url('/static-assets/running-dude.svg');
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 300px;
@@ -528,7 +535,7 @@ ul.flex-grid, ol.flex-grid {
 }
 
 .footer--dark {
-  background-color: $base-color;
+  background-color: $base-color-dark;
 }
 
 .footer-main .footer__inner {
@@ -572,4 +579,219 @@ ul.flex-grid, ol.flex-grid {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+}
+
+
+
+//form
+
+.account-form-container {
+    max-width: 26.66667rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.account-form {
+    font-size: 1.1rem;
+}
+.box {
+    background-color: #fff;
+    box-shadow: rgba(114, 182, 234, 0.2) 1px 0 30px;
+    border-radius: 8px;
+    padding: 2em 1.5em;
+}
+
+.settings-form__field + .settings-form__field {
+    margin-top: 2.427rem;
+}
+
+.settings-form__field {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #caeaf6;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.settings-form__field .settings-form__field__label {
+    color: rgba(39, 95, 106, 0.85);
+    position: absolute;
+    top: -.9em;
+    left: calc(0.75rem - 2px);
+    background-color: #fff;
+    padding: 0 8px;
+    font-size: 1rem;
+}
+
+label[for] {
+    cursor: pointer;
+}
+label {
+    font-weight: bold;
+    display: block;
+    font-size: .9rem;
+}
+
+.settings-form__field .settings-form__field__input {
+    font-size: 1rem;
+    padding: .75rem;
+        padding-right: 0.75rem;
+    padding-right: 5px;
+    border: 0;
+    color: rgba(32, 78, 87, 0.9);
+    box-shadow: none;
+    background-color: #fff;
+    margin: 0;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-radius: 7px;
+}
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], input[type="search"], input[type="number"], textarea, .text-field {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    height: auto;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #b4e1f3;
+    border-radius: 4px;
+    padding: .5em .6em;
+    background-color: #fefefe;
+    box-shadow: inset rgba(0, 0, 0, 0.05) 0 1px 2px;
+    transition: color .15s ease-out, opacity .15s ease-out;
+}
+
+.btn.mode--primary {
+    background-color: #3BD788;
+    font-weight: bold;
+}
+.btn[disabled], .btn.disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+    -webkit-filter: grayscale(0.6);
+    filter: grayscale(0.6);
+    background-color: #E4EAEB;
+    color: #668ea7;
+}
+
+.account-form-container .account-form-container__footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1.618rem 1.5em;
+    color: #86a6ba;
+}
+
+.account-form-container .account-form-container__footer > :first-child:nth-last-child(1) {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    margin: 0;
+}
+
+
+//about
+.jobs__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 80vh;
+    background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: auto auto;
+    background-size: cover;
+}
+
+.jobs__header .btn {
+    color: #21bec6;
+    border: 0;
+    font-size: 1.3em;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.05) 0 2px 4px,rgba(1,185,191,0.9) 0 5px 40px;
+    padding: .8em 2.5em;
+    transition: box-shadow .4s ease, -webkit-transform .5s ease;
+    transition: box-shadow .4s ease, transform .5s ease;
+    transition: box-shadow .4s ease, transform .5s ease, -webkit-transform .5s ease;
+}
+
+.btn.mode--subtle {
+    border: 1px solid #d5ecf6;
+    background-color: #fff;
+    color: #005c81;
+    transition: border-color .3s ease;
+    box-shadow: none;
+}
+
+.jobs__collage {
+    margin-top: 3px;
+}
+
+.jobs__collage__row {
+    margin-bottom: 3px;
+}
+.jobs__collage__row, .jobs__collage__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.jobs__collage__row__item:not(:last-child) {
+    margin-right: 3px;
+}
+
+.jobs__body {
+    max-width: 48rem;
+    width: 90%;
+    margin: 0 auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    margin-top: 5.1rem;
+    margin-bottom: 8.5rem;
+}
+
+.jobs__text {
+    font-size: 1.1em;
+}
+
+.jobs__open-positions {
+    color: #8FB1C7;
+}
+
+.jobs .jobs__quote-style {
+    margin-bottom: 5.1rem;
+}
+.jobs .jobs__quote-style {
+    font-weight: normal;
+    font-style: italic;
+    color: #668ea7;
+    padding-bottom: .85rem;
+}
+.jobs__body h1 {
+    font-weight: bold;
+    font-size: 1.29412rem;
+    margin-bottom: .85rem;
+    border-bottom: 1px solid rgba(102,142,167,0.2);
 }
