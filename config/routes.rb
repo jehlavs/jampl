@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'welcome/jobs', to: 'welcome#jobs', as: 'jobs'
   get 'welcome/customers', to: 'welcome#customers', as: 'customers'
   get 'welcome/bim', to: 'welcome#bim', as: 'bim'
+  get 'welcome/index2', to: 'welcome#index2', as: 'index2'
   
 end
