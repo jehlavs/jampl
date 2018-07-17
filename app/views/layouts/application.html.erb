@@ -8,18 +8,20 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', :defer => "defer" %>
 
     <%= stylesheet_link_tag 'application',
-    'https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=latin-ext',
+    'https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext',
      media: 'all', 'data-turbolinks-track' => true %>
-
-    <link rel="author" href="/humans.txt">
+     
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
 
      <!-- Force IE 8/9/10 to use its latest rendering engine -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#264796">
 
     <meta name="description" content="POPOPOSISP.">
 
