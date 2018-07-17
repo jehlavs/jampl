@@ -74,3 +74,5 @@ gem 'jquery-rails'
 gem "font-awesome-rails"
 
 gem 'tachyons-rails'
+
+gem 'heroku-deflater', :group => :production
