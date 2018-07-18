@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="661.45831mm"
+   height="156.10417mm"
+   viewBox="0 0 661.45831 156.10417"
    version="1.1"
    id="svg8"
-   sodipodi:docname="skewed-right.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="skewed-right.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,15 +25,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-64.285714"
-     inkscape:cy="560"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="1107.5213"
+     inkscape:cy="177.10292"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
-     inkscape:window-x="1358"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -44,19 +48,26 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       transform="matrix(-0.26458333,0,0,0.26458333,381.37797,99.507441)"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
-       d="M 0,-400.00001 2500,173.235 V 190 H 0 Z"
-       id="polygon815"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+     id="layer1"
+     transform="translate(326.9494,-56.418154)">
+    <g
+       id="layer1-5"
+       inkscape:label="Layer 1"
+       transform="translate(-46.869046,62.744048)">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="polygon815"
+         d="M 0,-400.00001 2500,173.235 V 190 H 0 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
+         transform="matrix(-0.26458333,0,0,0.26458333,381.37797,99.507441)" />
+    </g>
   </g>
 </svg>
