@@ -10,14 +10,14 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="661.45831mm"
-   height="156.10417mm"
-   viewBox="0 0 661.45831 156.10417"
+   height="50.270832mm"
+   viewBox="0 0 661.45831 50.270831"
    version="1.1"
-   id="svg8"
+   id="svg837"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="skewed-right.svg">
   <defs
-     id="defs2" />
+     id="defs831" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="1107.5213"
-     inkscape:cy="177.10292"
+     inkscape:zoom="0.061871843"
+     inkscape:cx="4286.7086"
+     inkscape:cy="-1009.1267"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer1-3"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -41,7 +41,7 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
-     id="metadata5">
+     id="metadata834">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -56,18 +56,25 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(326.9494,-56.418154)">
+     transform="translate(498.30442,-164.47846)">
     <g
-       id="layer1-5"
+       transform="translate(-285.24022,120.23736)"
+       id="layer1-3"
        inkscape:label="Layer 1"
-       transform="translate(-46.869046,62.744048)">
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="polygon815"
-         d="M 0,-400.00001 2500,173.235 V 190 H 0 Z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
-         transform="matrix(-0.26458333,0,0,0.26458333,381.37797,99.507441)" />
+       style="fill:#554400">
+      <g
+         style="fill:#554400"
+         id="use823"
+         inkscape:label="Layer 1"
+         transform="translate(67.016153,-55.26634)">
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="path1394"
+           d="M 0,-3.7795278e-6 2500,173.235 V 190 H 0 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
+           transform="matrix(-0.26458333,0,0,0.26458333,381.37797,99.507441)" />
+      </g>
     </g>
   </g>
 </svg>
