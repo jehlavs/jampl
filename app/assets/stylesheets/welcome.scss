@@ -674,3 +674,78 @@ p, ul, ol, blockquote, table, pre {
     text-align: center;
     padding: 3.4rem 5%;
 }
+
+
+//customers
+.sidebar {
+    min-width: 310px;
+    width: 310px;
+    max-width: 310px;
+    height: 100vh;
+}
+
+[aria-label="gallery"] {
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100%);
+
+    &:focus {
+      outline: 4px solid $base-color;
+      outline-offset: -6px;
+    }
+}
+
+[aria-label="gallery"] ul {
+    display: flex;
+}
+
+[aria-label="gallery"] li {
+    list-style: none;
+    flex: 0 0 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+[aria-label="gallery"] figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+[aria-label="gallery"] img {
+    max-height: calc(100% - 2rem);
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+[aria-label="gallery"] figcaption {
+    padding: 0.5rem;
+    font-style: italic;
+}
+
+#instructions p {
+    padding: 1rem;
+    text-align: center;
+    color: #fefefe;
+    background-color: #111;
+}
+#focus, #hover, #hover-and-focus, #touch {
+    display: none;
+}
+
+#instructions svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #fff;
+    vertical-align: -0.5rem;
+}
+
+[aria-label="gallery"]:focus + #instructions #focus, [aria-label="gallery"]:hover + #instructions #hover {
+    display: block;
+}
+
+[aria-label="gallery"]:hover:focus + #instructions #hover-and-focus {
+    display: block;
+}
