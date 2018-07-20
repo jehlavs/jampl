@@ -253,46 +253,6 @@ p, ul, ol, blockquote, table, pre {
 }
 
 
-//ABOUT
-.team-members-list li {
-    margin: 0 5% 1.7rem;
-    position: relative;
-}
-
-.team-members-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.team-members-list .member__image {
-    position: relative;
-    z-index: 10;
-    border-radius: 100%;
-    width: 165px;
-}
-
-.team-members-list .member__name {
-    margin: .5rem 0 0;
-}
-
-.team-members-list .member__specialization {
-    color: #668ea7;
-    font-size: .9rem;
-}
-
 
 
 //LAYOUT
@@ -654,4 +614,63 @@ p, ul, ol, blockquote, table, pre {
 
 .jobs__open-positions__list li {
     margin-bottom: 1em;
+}
+
+
+
+//about
+.team-members-list li {
+    margin: 0 5% 1.7rem;
+    position: relative;
+}
+
+.team-members-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.team-members-list .member__image {
+    position: relative;
+    z-index: 10;
+    border-radius: 100%;
+    width: 165px;
+    height: 165px;
+}
+
+.team-members-list .member__name {
+    margin: .5rem 0 0;
+}
+
+.team-members-list .member__specialization {
+    color: #668ea7;
+    font-size: .9rem;
+}
+
+.page-about__body {
+    max-width: 35rem;
+    width: 90%;
+}
+
+.page-about__hiring {
+    border: 1px solid #eee;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+    border-width: 1px 0;
+    text-align: center;
+    padding: 3.4rem 5%;
 }
