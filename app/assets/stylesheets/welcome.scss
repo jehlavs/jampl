@@ -580,3 +580,78 @@ p, ul, ol, blockquote, table, pre {
 }
 }
 
+
+
+
+//jobs
+.jobs__header {  
+  background-color: #66D6FF;
+}
+
+.jobs__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.jobs__text .btn {
+    border: 0;
+    font-size: 1.3em;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.05) 0 2px 4px,rgba(1,185,191,0.9) 0 5px 40px;
+    padding: .8em 2.5em;
+    transition: box-shadow .4s ease, -webkit-transform .5s ease;
+    transition: box-shadow .4s ease, transform .5s ease;
+    transition: box-shadow .4s ease, transform .5s ease, -webkit-transform .5s ease;
+}
+
+.jobs__body {
+    max-width: 48rem;
+    width: 90%;
+    margin: 0 auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    margin-top: 5.1rem;
+    margin-bottom: 8.5rem;
+}
+
+.jobs__paragraph {
+    font-size: 1.1em;
+}
+
+.jobs .jobs__quote-style {
+    margin-bottom: 5.1rem;
+}
+.jobs .jobs__quote-style {
+    font-weight: normal;
+    font-style: italic;
+    color: #668ea7;
+    padding-bottom: .85rem;
+}
+.jobs__body h1 {
+    font-weight: bold;
+    font-size: 1.29412rem;
+    margin-bottom: .85rem;
+    border-bottom: 1px solid rgba(102,142,167,0.2);
+}
+
+.jobs__body h2 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.jobs__open-positions__list li {
+    margin-bottom: 1em;
+}
