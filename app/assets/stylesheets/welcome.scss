@@ -1,4 +1,5 @@
 $base-color: #264796;
+$link-color: #5167bb;
 $btn-link: #0087ca;
 $base-color-dark: #122248;
 $base-color-paragraph: #6884a7;
@@ -16,7 +17,7 @@ ul {
 }
 
 a {
-  color: $base-color;
+  color: $link-color;
   text-decoration: none;
 
   &:hover {
@@ -36,6 +37,19 @@ p, ul, ol {
 h4 {
   font-size: 1.188rem;
 }
+
+input[type=radio], input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.lh-copy {
+  cursor: pointer;
+}
+
+
+
 
 .paragraph-blue {
     color: $base-color-paragraph;
@@ -123,7 +137,7 @@ h4 {
 }
 .btn.mode--link:hover {
     background-color: transparent;
-    color: #1DABF2;
+    color: #9eadff;
 }
 .btn.mode--link:focus, .btn.mode--link:hover {
     text-decoration: underline;
@@ -132,7 +146,7 @@ h4 {
     color: #4D9FC7;
 }
 .btn.mode--link {
-    color: $base-color;
+    color: $link-color;
     background: transparent;
         background-color: transparent;
     padding: 0;
@@ -200,6 +214,9 @@ h4 {
   transition: all 0.3s ease-in-out 0s;
 }
 
+
+
+//footer
 .footer-main {
   padding: 2.55rem 10% 1.7rem 5%;
 }
@@ -213,6 +230,18 @@ h4 {
   background-color: $base-color-dark;
 }
 
+.account-form-container__footer p a {
+  border-bottom: 1px solid;
+}
+
+.account-form-container__footer p a:hover {
+  text-decoration: none;
+}
+
+
+
+
+//customers
 .customers-logo-grid .company-logo {
   max-height: 2.35294em;
   max-width: 7.05882em;
@@ -311,15 +340,44 @@ h4 {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  }
+
+  @-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
 
-.layout-feature__inner {
-    max-width: 1040px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-full-mode: both;
+}
+
 
 .tilted-mask {
   position: relative;
@@ -550,7 +608,16 @@ h4 {
 }
 
 
-//order
+//order-form form order form
+.form-order-details__services {
+  border-left: 5px solid !important;
+  padding-left: 1rem !important;
+}
+
+#order-form form input {
+  background: #fff;
+}
+
 #order-form form input:focus {
   outline: 3px solid $btn-link;
 }
