@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
   root 'welcome#index2'
 
@@ -7,5 +8,7 @@ Rails.application.routes.draw do
   get 'welcome/bim', to: 'welcome#bim', as: 'bim'
   get 'welcome/index2', to: 'welcome#index2', as: 'index2'
   get 'welcome/index3', to: 'welcome#index3', as: 'index3'
-  
+  get 'welcome/facility', to: 'welcome#facility', as: 'facility'
+  get 'welcome/contacts', to: 'welcome#contacts', as: 'contacts'
+
 end
