@@ -30,7 +30,7 @@
   </div>
 
   <header role="banner">
-    <div class="" style="background-color: #efece5;">
+    <div class="">
       <div class="pb5">
         <nav class="dn dt-m dt-l w-100 mw8 mw9-l pv3 center"> 
           <div class="dtc v-mid pa3">
@@ -77,88 +77,133 @@
   </header>
 
   <main>
-    <div class="flex overflow-x-hidden" style="background-color: #efece5;">
-      <div class="overflow-y-auto sidebar">
+    <div class="overflow-x-hidden overflow-y-hidden cf">
+      <div class="fl overflow-y-auto sidebar">
         <div class="ph4">
           <h2 class="mv0 fw7 f5">Filtrovat podle</h2>
           <ul class="ph0 mh0 mv3">
             <li class="fw6 ttu">
-              <input id="art" value="art" class="dn" type="checkbox">
-              <label for="art" class="pointer">
-                <span class="">Opravy</span>
-              </label>
+              <button class="btn fil-cat" href="" data-rel="all">Vse</button>
                 <aside class="fr o-60 fw4 ml4">27</aside>
             </li>
 
             <li class="fw6 ttu">
-              <input id="art" value="art" class="dn" type="checkbox">
-              <label for="art" class="pointer">
-                <span class="">Fasady</span>
-              </label>
+              <button class="btn fil-cat" data-rel="web">Opravz</button>
                 <aside class="fr o-60 fw4 ml4">27</aside>
             </li>
 
             <li class="fw6 ttu">
-              <input id="art" value="art" class="dn" type="checkbox">
-              <label for="art" class="pointer">
-                <span class="">Revetaliziace</span>
-              </label>
+              <button class="btn fil-cat" data-rel="flyers">Fasadz</button>
                 <aside class="fr o-60 fw4 ml4">27</aside>
             </li>
           </ul>
         </div>
       </div> 
 
-      <div class="mainpage vh-100 mw7 ml5">
-        <h1 class="mt0 tc">Ukazka necoeho projektu JAMPLu</h1>
-        <div role="region" aria-label="gallery" tabindex="0" aria-describedby="instructions">
-          <ul>
-            <li>
-              <figure>
-                <img src="https://i.pinimg.com/originals/fe/61/b8/fe61b828c9490313681cda5257bae997.jpg" alt="two male figures in bathing costumes stand behind a wall on a cryptically doodled background">
-                <figcaption>Heads of State</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="http://www.lypophrenia.com/wp-content/uploads/2011/01/Hannah-H%C3%B6ch_Astronomy-and-Movement-Dada-250%C3%97190-mm-drawing-and-collage-1922.jpg" alt="stark photomontage with jagged edges and red, yellow, and blue shades">
-                <figcaption>Astronomy and Movement Dada</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="http://www.lypophrenia.com/wp-content/uploads/2011/01/Hannah-H%C3%B6ch_-Mother-watercolour-and-photograph-collage-on-grey-paper-41o%C3%9735o-mm-1925%E2%80%936.jpg" alt="Strange portrait-like montage. The subject is rotund and wears a torturous looking mask.">
-                  <figcaption>Mother</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="https://i.pinimg.com/originals/53/d9/e2/53d9e2cf92b05d3f7ddd903e5c91538a.jpg" alt="Reclining nude on a colourful bed, wearing a large, monster-like mask and spectacles">
-                <figcaption>Untitled</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="https://d32dm0rphc51dk.cloudfront.net/WGpoh18Y3iHXoI9g7rHSBw/large.jpg" alt="Photomontoge of female figures and automobile parts, featuing several instances of the BMW logo">
-                <figcaption>The Beautiful Girl</figcaption>
-              </figure>
-            </li>
-          </ul>
+      <div class="mainpage w-100 w-70-ns ml5-ns m0">
+        <h2 class="mt0">NAZEV TZHLE STRANKY</h2>
+        <div class="section animate web all">
+          <div class="middle">
+            <%= image_tag("img-cust-fasadamain.jpg", :alt => "") %>
+          </div>
+          <div class="left title">
+            <div class="content">
+               <h3>Oprava fasady čp. 26, Radonice</h3>
+               <p>
+                 <span>Termín realizace:</span>
+                 <span>2016</span>
+               </p>
+
+               <p>
+                 <span>Objem zakázky:</span>
+                 <span>167 000 Kč bez DPH</span>
+               </p>
+            </div>
+          </div>
+          <div class="right tiles">
+            <%= image_tag("img-cust-fasada1.jpg", :alt => "") %>
+            <%= image_tag("img-cust-fasada2.jpg", :alt => "") %>
+          </div>
         </div>
 
-        <div id="instructions">
-          <p id="touch">
-            <svg aria-hidden="true" focusable="false"><use xlink:href="#arrow-left"></use></svg>
-            Táhněte doprava
-            <svg aria-hidden="true" focusable="false"><use xlink:href="#arrow-right"></use></svg>
-          </p>
-          <p id="hover">
-            <svg aria-hidden="true" focusable="false"><use xlink:href="#arrow-left"></use></svg>
-            scrolluj more nebo sipkuj
-            <svg aria-hidden="true" focusable="false"><use xlink:href="#arrow-right"></use></svg>
-          </p>
-        </div> 
-      </div>  
+        <div class="section web all">
+          <div class="middle">
+            <%= image_tag("img-cust-fasadamain.jpg", :alt => "") %>
+          </div>
+          <div class="right title">
+            <div class="content">
+               <h3>Oprava fasady čp. 26, Radonice</h3>
+               <p>
+                 <span>Termín realizace:</span>
+                 <span>2016</span>
+               </p>
+
+               <p>
+                 <span>Objem zakázky:</span>
+                 <span>167 000 Kč bez DPH</span>
+               </p>
+            </div>
+          </div>
+          <div class="left tiles">
+            <%= image_tag("img-cust-fasada1.jpg", :alt => "") %>
+            <%= image_tag("img-cust-fasada2.jpg", :alt => "") %>
+          </div>
+        </div>
+
+        <div class="section web all">
+          <div class="middle">
+            <%= image_tag("img-cust-fasadamain.jpg", :alt => "") %>
+          </div>
+          <div class="left title">
+            <div class="content">
+               <h3>Oprava fasady čp. 26, Radonice</h3>
+               <p>
+                 <span>Termín realizace:</span>
+                 <span>2016</span>
+               </p>
+
+               <p>
+                 <span>Objem zakázky:</span>
+                 <span>167 000 Kč bez DPH</span>
+               </p>
+            </div>
+          </div>
+          <div class="right tiles">
+            <%= image_tag("img-cust-fasada1.jpg", :alt => "") %>
+            <%= image_tag("img-cust-fasada2.jpg", :alt => "") %>
+          </div>
+        </div>
+
+        <div class="section flyers all">
+          <div class="middle">
+            <%= image_tag("img-cust-fasadamain.jpg", :alt => "") %>
+          </div>
+          <div class="right title">
+            <div class="content">
+               <h3>Oprava fasady čp. 26, Radonice</h3>
+               <p>
+                 <span>Termín realizace:</span>
+                 <span>2016</span>
+               </p>
+
+               <p>
+                 <span>Objem zakázky:</span>
+                 <span>167 000 Kč bez DPH</span>
+               </p>
+            </div>
+          </div>
+          <div class="left tiles">
+            <%= image_tag("img-cust-fasada1.jpg", :alt => "") %>
+            <%= image_tag("img-cust-fasada2.jpg", :alt => "") %>
+          </div>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script  src="/assets/javascript/customers.js"></script> 
+        <script  src="/assets/javascript/customers-main.js"></script> 
+      </div>
        
     </div>
   </main>
