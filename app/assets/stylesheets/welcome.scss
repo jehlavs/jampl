@@ -724,8 +724,18 @@ input[type="password"] {
 
 
 //jobs
-.jobs__header {  
-  background-color: #22c197;
+
+.jobs__header {
+    background-image: 
+  linear-gradient(to right bottom, 
+     rgba(38, 71, 150, 0.8),
+     rgba(38, 71, 150, 0.8)),
+    image-url("img-jobs-header.jpg"); 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .jobs__text {
@@ -795,6 +805,46 @@ input[type="password"] {
 .jobs__open-positions__list li {
     margin-bottom: 1em;
 }
+
+
+.media-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.media-block__figure {
+    margin-right: 4rem;
+}
+
+.media-block__figure svg {
+    width: 5em;
+    height: 5em;
+}
+
+.media-block--centered {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 481px) {
+    .media-block {
+        margin-top: 1.7rem;
+        margin-bottom: 1.7rem;
+    }
+    .media-block h1 {
+        font-size: 1.64706rem;
+    }
+    .media-block__figure {
+        display: none;
+    }
+}
+
+
 
 
 
@@ -1368,7 +1418,7 @@ opacity: 1;
 .page-live__video {
     max-width: 640px;
     position: relative;
-    margin: 10rem auto 3rem;
+    margin: -10rem auto 3rem;
     background-color: $base-color;
     border-radius: 6px;
 }
