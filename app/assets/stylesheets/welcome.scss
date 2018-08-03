@@ -224,6 +224,14 @@ input[type=radio], input[type=checkbox] {
 //footer
 .footer-main {
   padding: 2.55rem 10% 1.7rem 5%;
+  margin-top: 550px;
+}
+
+@media only screen and (max-width: 481px) {
+  .footer-main {
+  padding: 2.55rem 10% 1.7rem 5%;
+  margin-top: 400px;
+}
 }
 
 .footer-main .footer-nav {
@@ -643,68 +651,81 @@ input[type=radio], input[type=checkbox] {
 }
 
 
-.form-control {
-  transition: .25s border ease-in-out;
-  border-radius: 0 !important;
-  outline: none !important;
-  box-shadow: none !important;
-  background: transparent;
-  color: $base-color-dark;
-  border: 0;
-  border-bottom: 2px solid #555;
+.form-order {
+    border-radius: .25rem;
+    background-color: #fdfdfd;
+    box-shadow: rgba(0, 92, 129, 0.15) 0 2px 10px;
+    transition: box-shadow .3s ease, background-color .3s ease, color .3s ease, -webkit-transform .2s ease;
+    transition: box-shadow .3s ease, background-color .3s ease, transform .2s ease, color .3s ease;
+    transition: box-shadow .3s ease, background-color .3s ease, transform .2s ease, color .3s ease, -webkit-transform .2s ease;
 }
 
-.form-control:focus {
-  border-bottom-color: $base-color;
+.group {
+  position: relative;
+  margin: 45px 0;
 }
 
-.errorMessages {
-  margin-top: 50px;
-  padding: 25px;
-  color: #A94442;
-  background: #202020;
-  border: 0 !important;
-  text-shadow: none !important;
-  box-shadow: 0 0 10px #151515;
-  text-align: center;
-}
 
-.form-control:not(.touched)+.floater:before {
+.group input, {
+  background: none;
+  color: #444;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
   display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $base-color-dark;
+  &:focus {
+    outline: none;
+  }
+  &:focus ~ label,
+  &:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: $base-color-dark;
+  }
+  &:focus ~ .bar:before {
+    width: 320px;
+  }
+}
+
+input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+.group label {
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
   position: absolute;
-  top: 0;
-  color: #666;
   pointer-events: none;
-  transition: .25s all ease-in-out;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
 }
 
-.form-control.touched+.floater:before,
-#username:focus+.floater:before,
-#username:not(:placeholder-shown)+.floater:before,
-#password:focus+.floater:before,
-#password:not(:placeholder-shown)+.floater:before {
-  position: absolute;
-  top: -20px;
-  font-size: 14px;
-  color: $base-color;
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+  &:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: $base-color-dark;
+    transition: 300ms ease all;
+    left: 0%;
+  }
 }
-
-#username+.floater:before,
-#username:focus+.floater:before {
-  content: "Vaše jméno a příjmení";
-}
-
-#password+.floater:before,
-#password:focus+.floater:before {
-  content: "Vaše e-mailová adresa";
-}
-
 
 
 
 //jobs
 .jobs__header {  
-  background-color: #66D6FF;
+  background-color: #22c197;
 }
 
 .jobs__text {
