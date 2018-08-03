@@ -1326,8 +1326,18 @@ opacity: 1;
     }
 }
 
+.header__navigation {
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    display: none;
+    clear: both;
+    padding-top: 10px;
+}
+
 .header__navigation-toggle-checkbox:checked ~ .header__navigation {
-        display: table;
+        display: block;
     }
 
 
