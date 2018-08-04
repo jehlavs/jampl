@@ -1,5 +1,5 @@
 <a href="#main" class="sr-only sr-only-focusable">Přeskočit na hlavní obsah stránky.</a>
-<div class="dn dt-l dt--fixed-l white pv3 mw8 mw9-l mr-auto ml-auto">
+<div class="dn dt-l dt--fixed-l white pv3 mw8 mr-auto ml-auto">
   <div class="dtc-ns tl pl3">
     <a href="https://mapy.cz/?q=50.3838625N%2C+13.2693786E" class="btn btn mode--link mode--link--muted">
       <span class="f5 normal">
@@ -31,8 +31,8 @@
 <header role="banner">
   <div class="jobs__header">
     <div class="pb5">
-      <nav class="dn dt-m dt-l w-100 mw8 mw9-l pv3 center"> 
-        <div class="dtc v-mid pa3">
+      <nav class="dn dt-m dt-l w-100 mw8 pv3 center"> 
+        <div class="dtc v-mid pa3 jampl-logo">
           <a href="/" class="dib pa1 b--white-90 grow border-box">
             <span class="sr-only">Společnost JAMPL</span>
             <svg version="1.1" viewBox="0 0 306.82 58.536" xmlns="http://www.w3.org/2000/svg" width="160" height="28.816" aria-hidden="true">
@@ -45,12 +45,12 @@
           </a>
         </div>
         <div class="nav-items dtc v-mid tr pa3 fw7">
-          <a class="relative hover-white no-underline white dn dib-ns pv2 ph3" href="/" >O nás</a> 
-          <a class="relative hover-white no-underline white dn dib-ns pv2 ph3" href="/" >Facility sluzby</a> 
-          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/" >BIM reseni</a> 
-          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/" >Zakaznici</a> 
-          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/" >Kariera</a> 
-          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/" >Kontakt</a> 
+          <a class="relative hover-white no-underline white dn dib-ns pv2 ph3" href="/welcome/about" >O nás</a> 
+          <a class="active relative hover-white no-underline white dn dib-ns pv2 ph3" href="/welcome/facility" >Správa nemovitostí</a> 
+          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/bim" >BIM řešení</a> 
+          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/customers" >Zákazníci</a> 
+          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/jobs" >Kariéra</a> 
+          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/contacts" >Kontakt</a> 
         </div>
       </nav> 
 
@@ -90,7 +90,7 @@
 
   <section class="layout-feature layout-feature--reverse mt6-l mb5-l mv3 z-2 mw9 ml-auto mr-auto" id="stavebni-udrzba">
     <div class="layout-feature__text slideInUp animated">
-      <h2 class="f2-ns mb3-ns mb2 b lh-title">Drobná stavební údržba a řemesla</h2>
+      <h2 class="f2-ns f4 mb3-ns mb2 b lh-title">Drobná stavební údržba a řemesla</h2>
       <div class="measure paragraph-blue">
 
         <ul class="layout-feature__list layout-feature__list--blue">
@@ -134,20 +134,13 @@
     </div>
 
     <div class="layout-feature__figure layout-feature__figure--wide">
-      <dl class="db dib-l w-auto-l lh-title mr6-l mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">1 895</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zakázek</dd>
-      </dl>
-      <dl class="db dib-l w-auto-l lh-title mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">327</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zákazníků</dd>
-      </dl>
+      <%= image_tag("service-rem.svg", :alt => "", :class => "page-facility__icon") %>
     </div>
   </section>
 
   <section class="layout-feature mt6-l mb5-l mv3 z-2 mw9 ml-auto mr-auto" id="zelen">
     <div class="layout-feature__text slideInUp animated">
-      <h2 class="f2-ns mb3-ns mb2 b lh-title">Údržba a zakládání zeleně</h2>
+      <h2 class="f2-ns f4 mb3-ns mb2 b lh-title">Údržba a zakládání zeleně</h2>
       <div class="measure paragraph-blue">
         <ul class="layout-feature__list layout-feature__list--blue">
           <li>
@@ -185,20 +178,13 @@
     </div>
 
     <div class="layout-feature__figure layout-feature__figure--wide">
-      <dl class="db dib-l w-auto-l lh-title mr6-l mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">1 895</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zakázek</dd>
-      </dl>
-      <dl class="db dib-l w-auto-l lh-title mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">327</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zákazníků</dd>
-      </dl>
+      <%= image_tag("service-zelen.svg", :alt => "", :class => "page-facility__icon--right") %>
     </div>
   </section>
 
   <section class="layout-feature layout-feature--reverse mt6-l mb5-l mv3 z-2 mw9 ml-auto mr-auto" id="bim">
     <div class="layout-feature__text slideInUp animated">
-      <h2 class="f2-ns mb3-ns mb2 b lh-title">BIM řešení</h2>
+      <h2 class="f2-ns f4 mb3-ns mb2 b lh-title">BIM řešení</h2>
       <div class="measure paragraph-blue">
        <ul class="layout-feature__list layout-feature__list--blue">
           <li>
@@ -241,20 +227,13 @@
     </div>
 
     <div class="layout-feature__figure layout-feature__figure--wide">
-      <dl class="db dib-l w-auto-l lh-title mr6-l mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">1 895</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zakázek</dd>
-      </dl>
-      <dl class="db dib-l w-auto-l lh-title mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">327</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zákazníků</dd>
-      </dl>
+      <%= image_tag("service-bim.svg", :alt => "", :class => "page-facility__icon") %>
     </div>
   </section>
 
   <section class="layout-feature mt6-l mb5-l mv3 z-2 mw9 ml-auto mr-auto" id="technicke-sluzby">
     <div class="layout-feature__text slideInUp animated">
-      <h2 class="f2-ns mb3-ns mb2 b lh-title">Technické služby, autodoprava a mechanizace</h2>
+      <h2 class="f2-ns f4 mb3-ns mb2 b lh-title">Technické služby, autodoprava a mechanizace</h2>
       <div class="measure paragraph-blue">
         <ul class="layout-feature__list layout-feature__list--blue">
           <li>
@@ -322,20 +301,13 @@
     </div>
 
     <div class="layout-feature__figure layout-feature__figure--wide">
-      <dl class="db dib-l w-auto-l lh-title mr6-l mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">1 895</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zakázek</dd>
-      </dl>
-      <dl class="db dib-l w-auto-l lh-title mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">327</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zákazníků</dd>
-      </dl>
+      <%= image_tag("service-tech.svg", :alt => "", :class => "page-facility__icon--right") %>
     </div>
   </section>
 
   <section class="layout-feature layout-feature--reverse mt6-l mb5-l mv3 z-2 mw9 ml-auto mr-auto" id="provadeni-staveb">
     <div class="layout-feature__text slideInUp animated">
-      <h2 class="f2-ns mb3-ns mb2 b lh-title">Provádění staveb</h2>
+      <h2 class="f2-ns f4 mb3-ns mb2 b lh-title">Provádění staveb</h2>
       <div class="measure paragraph-blue">
         <ul class="layout-feature__list layout-feature__list--blue">
           <li>
@@ -362,20 +334,13 @@
     </div>
 
     <div class="layout-feature__figure layout-feature__figure--wide">
-      <dl class="db dib-l w-auto-l lh-title mr6-l mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">1 895</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zakázek</dd>
-      </dl>
-      <dl class="db dib-l w-auto-l lh-title mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">327</dd>
-        <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zákazníků</dd>
-      </dl>
+      <%= image_tag("service-stav.svg", :alt => "", :class => "page-facility__icon") %>
     </div>
   </section>
 
   <section class="layout-feature mt6-l mb5-l mv3 z-2 mw9 ml-auto mr-auto" id="zemni-udrzba">
     <div class="layout-feature__text slideInUp animated">
-      <h2 class="f2-ns mb3-ns mb2 b lh-title">Zemní práce a údržba komunikací  </h2>
+      <h2 class="f2-ns f4 mb3-ns mb2 b lh-title">Zemní práce a údržba komunikací  </h2>
       <div class="measure paragraph-blue">
         <ul class="layout-feature__list layout-feature__list--blue">
           <li>
@@ -407,6 +372,41 @@
     </div>
 
     <div class="layout-feature__figure layout-feature__figure--wide">
+      <%= image_tag("service-zem.svg", :alt => "", :class => "page-facility__icon--right") %>
+    </div>
+  </section>
+
+  <section class="mt3 mt5-ns mb5">
+    <ul class="hover-block tc">
+
+      <li class="hover-block__item pa0 pa5-ns">
+        <span class="f5 normal white mr3"><svg aria-hidden="true" data-prefix="fal" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file-alt fa-w-12 mb3 mb5-ns" width="4em" height="4em"><path fill="#264796" d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zm-22.6 22.7c2.1 2.1 3.5 4.6 4.2 7.4H256V32.5c2.8.7 5.3 2.1 7.4 4.2l83.9 83.9zM336 480H48c-8.8 0-16-7.2-16-16V48c0-8.8 7.2-16 16-16h176v104c0 13.3 10.7 24 24 24h104v304c0 8.8-7.2 16-16 16zm-48-244v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm0 64v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm0 64v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12z" class=""></path></svg></span>
+        <h2 class="b f3-ns f4 mb5">Ceník služeb JAMPL</h2>
+
+        <p>
+          <a href="#" class="btn mode--dark style--square mode--icon-left" title="Stáhnout ceník služeb">
+        Stáhnout ceník (PDF, 2MB)</a>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="layout-feature pt0 pt6-l mt6-l mb5-l mv3 z-2 mw9 ml-auto mr-auto bt b--light-gray" id="administrativa">
+    <div class="layout-feature__text slideInUp animated">
+      <h2 class="f2-ns f4 m0-ns ml3 mb3-ns mb2 b lh-title">Nebo potrebujete administrativu a účetnictví pro SVJ a bytová družstva?</h2>
+      <div class="measure paragraph-blue mt5">
+        <p>
+          <a href="https://www.hostes.cz/" target="_blank" class="btn mode--dark style--square mode--icon-left" title="Stránky firmy Hostes, otevře se v novém okně">Navstivit nasi dcerinnou firmu Hostes 
+            <span class="f5 normal ml12">
+              <svg aria-hidden="true" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-right fa-w-14" width="18" height="18"><path fill="#fff" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path>
+              </svg>
+            </span> 
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="layout-feature__figure layout-feature__figure--wide">
       <dl class="db dib-l w-auto-l lh-title mr6-l mh3">
         <dd class="f3 f-subheadline-l fw6 ml0">1 895</dd>
         <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zakázek</dd>
@@ -416,20 +416,5 @@
         <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zákazníků</dd>
       </dl>
     </div>
-  </section>
-
-  <section class="mt5 mb5">
-    <ul class="hover-block tc">
-
-      <li class="hover-block__item pa5">
-        <span class="f5 normal white mr3"><svg aria-hidden="true" data-prefix="fal" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file-alt fa-w-12 mb5" width="4em" height="4em"><path fill="#264796" d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zm-22.6 22.7c2.1 2.1 3.5 4.6 4.2 7.4H256V32.5c2.8.7 5.3 2.1 7.4 4.2l83.9 83.9zM336 480H48c-8.8 0-16-7.2-16-16V48c0-8.8 7.2-16 16-16h176v104c0 13.3 10.7 24 24 24h104v304c0 8.8-7.2 16-16 16zm-48-244v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm0 64v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm0 64v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12z" class=""></path></svg></span>
-        <h2 class="b f3 mb5">Ceník služeb JAMPL</h2>
-
-        <p>
-          <a href="#" class="btn mode--dark style--square mode--icon-left" title="Stáhnout ceník služeb">
-        Stáhnout ceník (PDF, 2MB)</a>
-        </p>
-      </li>
-    </ul>
   </section>
 </main>     

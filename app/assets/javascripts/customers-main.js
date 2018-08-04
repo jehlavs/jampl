@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready('turbolinks:load', function(){
 
    var $sm = 480;
    var $md = 768;

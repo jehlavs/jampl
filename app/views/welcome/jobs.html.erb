@@ -1,5 +1,5 @@
 <a href="#main" class="sr-only sr-only-focusable">Přeskočit na hlavní obsah stránky.</a>
-<div class="dn dt-l dt--fixed-l white pv3 mw8 mw9-l mr-auto ml-auto">
+<div class="dn dt-l dt--fixed-l white pv3 mw8 mr-auto ml-auto">
   <div class="dtc-ns tl pl3">
     <a href="https://mapy.cz/?q=50.3838625N%2C+13.2693786E" class="btn btn mode--link mode--link--muted">
       <span class="f5 normal">
@@ -32,7 +32,7 @@
   <div class="cover bg-left bg-center-l h-50 h-inherit-l jobs__header layout-hero--horizontal mb5 pa3">
     <div class="pb5">
       <nav class="header__navigation dn dt-m dt-l w-100 mw8 pv3 center"> 
-        <div class="dtc v-mid pa3">
+        <div class="dtc v-mid pa3 jampl-logo">
           <a href="/" class="dib pa1 b--white-90 grow border-box">
             <span class="sr-only">Společnost JAMPL</span>
             <svg version="1.1" viewBox="0 0 306.82 58.536" xmlns="http://www.w3.org/2000/svg" width="160" height="28.816" aria-hidden="true">
@@ -49,7 +49,7 @@
           <a class="relative hover-white no-underline white dn dib-ns pv2 ph3" href="/welcome/facility" >Správa nemovitostí</a> 
           <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/bim" >BIM řešení</a> 
           <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/customers" >Zákazníci</a> 
-          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/jobs" >Kariéra</a> 
+          <a class="active relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/jobs" >Kariéra</a> 
           <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/contacts" >Kontakt</a> 
         </div>
       </nav> 
@@ -79,7 +79,7 @@
         </nav>
       </div>
 
-      <div class="mt4 mt4-ns ph3 mw8 center tc">
+      <div class="mt4 mt6-ns ph3 mw8 center tc">
         <h1 class="f2 f1-ns fw8 white mb4 lh-title">Verime v neco</h1>
         <h2 class="fw3 f3 f4 white mt3 mb5 mt5-l mb5-ns relative z-999">Pridejte s k nam</h2>
         <a class="btn style--cotton base-blue-f f5 fw7 fw9-l ph3-l pv4-l ph3 pv2 grow dib v-mid z-99" href="#order-form">Jake pozice nutne potrebujeme?</a>
@@ -168,8 +168,11 @@
       <h2 class="f2 mb0">Pošlete nám svůj životopis</h2>
       <p class="f4 mb2 comp-blue-f measure-wide">Mozno lorem.</p>
 
-      <p class="f4">
-        <a href="#" class="btn mode--link mode--link--attention">Vybrat soubor...
+      <p class="f4 mt5-ns mt3">
+        <a href="#" class="btn mode--link mode--link--attention"><span class="f5 normal ml12">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-right fa-w-14" width="18" height="18"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path>
+                </svg>
+              </span> Vybrat soubor...
         </a>
       </p>
     </div>
@@ -177,8 +180,8 @@
 
   <section class="pb6-ns pb3 mt5 bt b--light-gray">
     <div class="mw7 mr-auto ml-auto mt6-l mt4" id="order-form">
-      <h2 class="f2-ns f4 b mb0  lh-title tc white">Zaujaly vás naše služby?</h2>
-      <h3 class="f3-ns f5 mb3 tc fw3 white">Dame vam vedet do 15 minut. Jsme tu pro vas.</h3>
+      <h2 class="f2-ns f4 b mb0  lh-title tc">Nemate u sebe zivotopis? Nevadi</h2>
+      <h3 class="f3-ns f5 mb3 tc fw3">Staci vyplnit tento formular.</h3>
 
       <form class="form-order bg-white pt5 pb4 ph6-l ph3 mt4 ml-auto mr-auto">
         <div class="group">
@@ -198,14 +201,14 @@
           <details class="form-order-details" role="group">
             <summary class="form-order-details__summary" role="button">
               <span class="form-order-details__summary-text pointer mid-gray">
-                Vyberte typ sluzby
+                Jakou profesi umite nejlepe? 
               </span>
             </summary>
 
             <fieldset class="form-order-details__services bn" aria-describedby="vyber-sluzby">
               <div class="flex items-center mv2">
                 <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
-                <label for="spacejam" class="lh-copy">Vymalovat</label>
+                <label for="spacejam" class="lh-copy">Zamecnik</label>
               </div>
               <div class="flex items-center mv2">
                 <input class="mr2" type="checkbox" id="airbud" value="airbud">
@@ -222,15 +225,7 @@
 
         <div class="mt4">
           <button type="submit" class="btn style--cotton base-blue-f f6 fw7 fw9-l ph4 pv3 grow dib v-mid z-999 ttu grow pointer" disabled="true" formnovalidate="">Odeslat</button>
-
-          <p class="f4">
-            <a href="#" class="btn mode--link mode--link--muted size--large style--wide mode--icon-right">Zobrazit ceník
-              <span class="f5 normal ml12">
-                <svg aria-hidden="true" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-right fa-w-14" width="18" height="18"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path>
-                </svg>
-              </span> 
-            </a>
-          </p> 
+ 
         </div>
         <div class="account-form-container__footer mt5">
           <p class="paragraph-blue">

@@ -1,4 +1,4 @@
-$(function() {
+$('turbolinks:load', function() {
     var selectedClass = "";
     $(".fil-cat").click(function(){ 
     selectedClass = $(this).attr("data-rel"); 
