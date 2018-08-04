@@ -1203,28 +1203,42 @@ height: 5em;
     flex: none;
 }
 
-.text-sticker-container, .ZmJ0qjieUw ._3no2RXe9rX {
+.text-sticker-container {
     margin-left: auto;
     margin-right: 0;
     padding-left: 15px;
     padding-right: 0;
-}
-.text-sticker-container, .ZmJ0qjieUw ._3no2RXe9rX {
+    opacity: 0;
+    will-change: opacity,transform;
+    width: 50%;
+    max-width: 645px;
+    position: relative;
     -webkit-box-flex: 0;
     -ms-flex: none;
     flex: none;
 }
-.text-sticker-container, ._3no2RXe9rX {
-    width: 50%;
-    max-width: 645px;
+
+@media only screen and (max-width: 481px) {
+    .image-sticker-container{
+    display: none;
+  }
+
+  .text-sticker-container {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .helper-padder {
+    padding-bottom: 750% !important;
+  }
+
+  .text-sticker {
+    width: 15em !important;    
+    margin: 0 1rem;
+  }
 }
-.text-sticker-container, ._3no2RXe9rX {
-    position: relative;
-}
-.text-sticker-container, ._3no2RXe9rX {
-    opacity: 0;
-    will-change: opacity,transform;
-}
+
 
 .image-sticker-container__inner {
     padding-top: 17.30769%;
@@ -1237,34 +1251,6 @@ height: 5em;
 .bim-image-wrapper {
     margin-bottom: 60px;
 }
-
-.bim-heading--sticky {
-    font-size: 52px;
-}
-
-
-.bim-paragraph--sticky {
-    font-size: 20px;
-}
-
-.bim-paragraph--sticky {
-    padding: 0;
-    margin: 0;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    vertical-align: baseline;
-    border: 0;
-    font-size: 16px;
-    color: #000;
-    letter-spacing: .025em;
-    line-height: 1.55556;
-    font-weight: 200;
-}
-
-
 
 .text-sticker__inner {
     position: absolute;
