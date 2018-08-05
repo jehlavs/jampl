@@ -1691,11 +1691,23 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3
     display: none;
     clear: both;
     padding-top: 10px;
+    
 }
 
 .header__navigation-toggle-checkbox:checked ~ .header__navigation {
-        display: block;
-    }
+  display: inline-grid;
+  position: absolute;
+    top: 3em;
+    left: 21vh;
+    background-color: $base-color;
+    z-index: 9999;
+}
+
+.header__navigation-toggle-checkbox:checked ~ .header__navigation a {
+  padding-bottom: 1rem;
+
+}
+
 
 
 
