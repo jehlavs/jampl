@@ -31,7 +31,7 @@
 <header role="banner">
   <div class="cover bg-left bg-center-l h-50 h-inherit-l layout-hero layout-hero--horizontal mb5 pa3 tilted-mask">
     <div class="pb5 pb6-m pb7-l">
-      <nav class="header__navigation dn dt-m dt-l w-100 mw8 pv3 center bg-white"> 
+      <nav class="header__navigation dn dt-m dt-l w-100 mw8 pv3 center"> 
         <div class="dtc v-mid pa3 jampl-logo">
           <a href="/" class="dib pa1 b--white-90 grow border-box">
             <span class="sr-only">Společnost JAMPL</span>
@@ -81,16 +81,17 @@
 
       <div class="mt4 mt5-ns ph3 mw8 center">
         <h1 class="f2 f1-ns fw8 white mb4 lh-title">Přenechte nám <br> své starosti</h1>
-        <h2 class="fw3 f3 f4 white mt3 mb5 mt5-l mb5-ns relative z-999">Rodinná firma specializovaná na <a href="/welcome/facility" class="nav__link bb--dotted z-999 white" target="_blank">správu nemovitostí</a> a <a href="/welcome/bim" class="nav__link bb--dotted white" target="_blank">BIM</a>.</h2>
+        <h2 class="fw3 f3 f4 white mt3 mb5 mt5-l mb5-ns relative z-999">Rodinná firma specializovaná na <a href="#services" class="nav__link bb--dotted z-999 white">správu nemovitostí</a> a <a href="/welcome/bim" class="nav__link bb--dotted white" target="_blank">BIM</a>.</h2>
         <a class="btn style--cotton base-blue-f f4-ns fw7 fw9-l ph5-ns pv4-l ph3 pv2 grow dib v-mid z-999 ttu" href="#order-form">Nezávazně objednat</a>
       </div>
     </div>
   </div> 
+  <script  src="/assets/javascript/header.js"></script> 
 </header>
 
 
 <main>
-  <section class="layout-feature layout-feature--reverse mv3 z-2 mw9 ml-auto mr-auto">
+  <section class="layout-feature layout-feature--reverse mv3 z-2 mw9 ml-auto mr-auto" id="main">
     <div class="layout-feature__text slideInUp animated">
       <h2 class="f2-ns f4 mb3-ns mb2 b lh-title">Váš leader pro správu nemotivostí</h2>
       <div class="measures paragraph-blue">
@@ -227,7 +228,7 @@
   </section>
 
   <section class="layout-core pt4-ns pt3 mb5">    
-    <div class="layout-core__inner mw8 ml-auto mr-auto w-90">
+    <div class="layout-core__inner mw8 ml-auto mr-auto w-90" id="services">
       <h2 class="tc f2-ns f4 mb0-ns mb2 b lh-title">Prioritizujte váš core business</h2>
       <h3 class="tc f4-ns f6 paragraph-blue mb5 fw3">Komplexní přístup. Flexibilní jednání. Termín a kvalita.</h3>
       <ul class="flex flex-wrap flex-grid">
@@ -367,9 +368,9 @@
         </div>
 
         <div class="mt4">
-          <button type="submit" class="btn style--cotton base-blue-f f6 fw7 fw9-l ph4 pv3 grow dib v-mid z-999 ttu grow pointer" disabled="true" formnovalidate="">Odeslat</button>
+          <button type="submit" class="btn mode--subtle style--square white hover-white base-blue-f f6 fw7 fw9-l ph4 pv3 grow dib v-mid z-999 ttu grow pointer" disabled="true" formnovalidate="">Odeslat</button>
 
-          <p class="f4">
+          <p class="f5 mt4">
             <a href="#" class="btn mode--link mode--link--muted size--large style--wide mode--icon-right">Zobrazit ceník
               <span class="f5 normal ml12">
                 <svg aria-hidden="true" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-right fa-w-14" width="18" height="18"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path>
@@ -380,7 +381,7 @@
         </div>
         <div class="account-form-container__footer mt5">
           <p class="paragraph-blue">
-            Kliknutim na "Odeslat" souhasitte s <a href="#" target="_blank" title="nece neco otevre se v novem okne">terms of sue</a> a ze ste cet nase <a href="#" target="_blank" title="nece neco otevre se v novem okne">privacy policy</a>.
+            Kliknutim na "Odeslat" souhasitte s <a class="base-blue-f" href="#" target="_blank" title="nece neco otevre se v novem okne">terms of sue</a> a ze ste cet nase <a class="base-blue-f" href="#" target="_blank" title="nece neco otevre se v novem okne">privacy policy</a>.
           </p>
         </div>
       </form>        
