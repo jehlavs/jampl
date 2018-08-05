@@ -29,8 +29,8 @@
 </div>
 
 <header role="banner">
-  <div class="jobs__header">
-    <div class="pb5">
+  <div class="facility__header">
+    <div class="pb3">
       <nav class="dn dt-m dt-l w-100 mw8 pv3 center"> 
         <div class="dtc v-mid pa3 jampl-logo">
           <a href="/" class="dib pa1 b--white-90 grow border-box">
@@ -72,14 +72,12 @@
         </ul>
       </div>
 
-      <div class="ph3 mw8 mw9-l center">
-        <header class="jobs__text jobs-background" data-jobs-header="">
-          <h1 class="light f2 mb4">
-            Verime v ne neco.<br>
+      <div class="mw8 mw9-l center">
+        <header class="facility__text jobs-background" data-jobs-header="">
+          <h1 class="white f2">
+            Naky heslo<br>
             Pridejte se k nam.
           </h1>
-
-          <a href="#open-positions" class="btn mode--subtle style--square white" data-smooth-scroll="" style="font-weight: 700;">Jake pozice nutne potrebujeme?</a>
         </header>
       </div>
     </div>
@@ -415,6 +413,72 @@
         <dd class="f3 f-subheadline-l fw6 ml0">327</dd>
         <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zákazníků</dd>
       </dl>
+    </div>
+  </section>
+
+  <section class="pb6-ns pb3 mt5 bt b--light-gray  footer--dark" style="max-height: 550px;">
+    <div class="mw7 mr-auto ml-auto mt6-l mt4" id="order-form">
+      <h2 class="f2-ns f4 b mb0  lh-title tc white">Zaujaly vás naše služby?</h2>
+      <h3 class="f3-ns f5 mb3 tc fw3 white">PREPSAT--Dame vam vedet do 15 minut. Jsme tu pro vas.</h3>
+
+      <form class="form-order bg-white pt5 pb4 ph6-ns ph3 mt4 ml-auto mr-auto">
+        <div class="group">
+          <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+          <label>Vaše jméno a příjmení</label>
+        </div>
+        <div class="group">
+          <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+          <label>Váš e-mail</label>
+        </div>
+        <div class="group">
+          <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+          <label>Váš mobil</label>
+        </div>
+
+        <div class="mt5">
+          <details class="form-order-details" role="group">
+            <summary class="form-order-details__summary" role="button">
+              <span class="form-order-details__summary-text pointer mid-gray">
+                Vyberte typ sluzby
+              </span>
+            </summary>
+
+            <fieldset class="form-order-details__services bn" aria-describedby="vyber-sluzby">
+              <div class="flex items-center mv2">
+                <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
+                <label for="spacejam" class="lh-copy">Vymalovat</label>
+              </div>
+              <div class="flex items-center mv2">
+                <input class="mr2" type="checkbox" id="airbud" value="airbud">
+                <label for="airbud" class="lh-copy">Zvedat telefony</label>
+              </div>
+              <div class="flex items-center mv2">
+                <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
+                <label for="hocuspocus" class="lh-copy">Postavit vec</label>
+              </div>
+            </fieldset>
+
+          </details>
+        </div>
+
+        <div class="mt4">
+          <button type="submit" class="btn mode--subtle style--square white hover-white base-blue-f f6 fw7 fw9-l ph4 pv3 grow dib v-mid z-999 ttu grow pointer" disabled="true" formnovalidate="">Odeslat</button>
+
+          <p class="f5 mt4">
+            <a href="#" class="btn mode--link mode--link--muted size--large style--wide mode--icon-right">Zobrazit ceník
+              <span class="f5 normal ml12">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-right fa-w-14" width="18" height="18"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path>
+                </svg>
+              </span> 
+            </a>
+          </p> 
+        </div>
+        <div class="account-form-container__footer mt5">
+          <p class="paragraph-blue">
+            Kliknutim na "Odeslat" souhasitte s <a class="base-blue-f" href="#" target="_blank" title="nece neco otevre se v novem okne">terms of sue</a> a ze ste cet nase <a class="base-blue-f" href="#" target="_blank" title="nece neco otevre se v novem okne">privacy policy</a>.
+          </p>
+        </div>
+      </form>        
     </div>
   </section>
 </main>     

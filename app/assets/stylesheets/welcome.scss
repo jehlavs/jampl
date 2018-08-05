@@ -284,15 +284,25 @@ left: 82vh;
 
 
 //footer
+.footer-main--landing {
+  margin-top: 550px;
+  background-color: inherit;
+}
+
+@media only screen and (max-width: 481px) {
+  .footer-main--landing {
+  margin-top: 400px;
+}
+}
+
 .footer-main {
   padding: 2.55rem 10% 1.7rem 5%;
-  margin-top: 550px;
+  background-color: $base-color;
 }
 
 @media only screen and (max-width: 481px) {
   .footer-main {
   padding: 2.55rem 10% 1.7rem 5%;
-  margin-top: 400px;
 }
 }
 
@@ -873,16 +883,17 @@ input[type="password"] {
     color: #668ea7;
     padding-bottom: .85rem;
 }
-.jobs__body h1 {
+.jobs__body h2 {
     font-weight: bold;
     font-size: 1.29412rem;
     margin-bottom: .85rem;
     border-bottom: 1px solid rgba(102,142,167,0.2);
 }
 
-.jobs__body h2 {
+.jobs__body h3 {
     font-size: 1em;
     font-weight: bold;
+    margin-bottom: .5rem;
 }
 
 .jobs__open-positions__list li {
@@ -1362,6 +1373,30 @@ height: 5em;
 
 
 //facility
+
+.facility__header {
+  background: #667db6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.facility__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 50vh;
+}
 
 .page-facility__icon {
   padding: auto 4rem !important;
