@@ -4,9 +4,7 @@ $btn-link: #0087ca;
 $base-color-dark: #122248;
 $base-color-paragraph: #6884a7;
 
-* {
-  outline: 1px solid red;
-}
+
 
 body {
   color: $base-color;
@@ -48,6 +46,16 @@ input[type=radio], input[type=checkbox] {
 
 .lh-copy {
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 //line 
@@ -1089,6 +1097,129 @@ height: 5em;
 
 
 //customers page
+.filters-wrapper ._2YDWMjnLcH {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.filters-wrapper ._28EVydrbln {
+    position: relative;
+    top: -2px;
+    left: 2px;
+    -webkit-transform-origin: 50% 33%;
+    transform-origin: 50% 33%;
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease;
+}
+
+[role="menu"] a.menu-item {
+  font-size: 1rem;
+}
+
+[role="menu"] a.menu-item--active {
+  border-bottom: 1px solid;
+  color: #000;
+}
+
+[data-menu-component] {
+  position: relative;
+  display: inline-block;
+}
+
+.filters-wrapper label {
+  display: inline-block;
+  color: #000;
+  border-bottom: 1px solid;
+      margin-left: 6px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+[role="menu"] ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+    justify-content:space-around;
+}
+
+[role="menu"] ul li {
+  display: inline;
+    color: #999;
+    line-height: 1.6;
+    letter-spacing: .025em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: color .2s ease-in;
+    transition: color .2s ease-in;
+    margin-right: 50px;
+}
+
+[data-opens-menu], [role="menu"] a {
+  line-height: 1;
+  text-align: left;
+  border: 0;
+  color: #999;
+  text-decoration: none;
+}
+
+[data-opens-menu], [role="menu"] a:hover {
+  border-bottom: 1px solid;
+  color: #000;
+}
+
+[type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
+  outline: 3px solid $btn-link;
+}
+
+:checked + label .expanded-text {
+  display: inline;
+}
+
+:checked + label .collapsed-text {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label .expanded-text {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label .collapsed-text {
+  display: inline;
+  -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+}
+
+[role="menu"] {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+:checked ~ [role="menu"] {
+  display: block;
+}
+
+[data-menu-origin="right"] {
+  left: auto;
+  right: 0;
+}
+
+[role="menu"] a {
+  display: block;
+  min-width: 100%;
+  margin-top: 0.125rem;
+  white-space: nowrap;
+}
+
 .sidebar {
     min-width: 310px;
     width: 310px;
@@ -1326,7 +1457,7 @@ height: 5em;
   }
 
   .helper-padder {
-    padding-bottom: 750% !important;
+    padding-bottom: 700% !important;
   }
 
   .text-sticker {
@@ -1360,6 +1491,8 @@ height: 5em;
     top: 0;
     left: 0;
     right: 0;
+    width: 35rem;
+height: 25rem;
 }
 
 .customers-logo-grid .company-logo.company-logo--square {
