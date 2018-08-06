@@ -4,12 +4,8 @@ $btn-link: #0087ca;
 $base-color-dark: #122248;
 $base-color-paragraph: #6884a7;
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+* {
+  outline: 1px solid red;
 }
 
 body {
@@ -198,7 +194,7 @@ left: 82vh;
 .btn.style--cotton:hover, .btn.style--cotton:focus {
   background-color: #fff;
   box-shadow: rgba(0,92,129,0.15) 0 2px 15px;
-}
+ }
 
 .btn.mode--link--muted:hover {
     color: #51afdd;
@@ -800,7 +796,7 @@ input[type="password"] {
 .bar {
   position: relative;
   display: block;
-  width: 320px;
+  width: 300px;
   &:before {
     content: '';
     height: 2px;
@@ -966,6 +962,30 @@ blockquote:after {
     content: "\201D";
     position: absolute;
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ styles */
+  blockquote:before {
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: -20px;
+    left: -65px;
+    content: "\201C";
+    display: none;
+}
+blockquote:after {
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:-16px;
+    bottom:-0.6em;
+    content: "\201D";
+    position: absolute;
+    display: none;
+}
+}
+
 
 .team-members-list li {
     margin: 0 5% 1.7rem;
