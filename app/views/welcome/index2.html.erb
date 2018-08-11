@@ -1,5 +1,5 @@
 <a href="#main" class="sr-only sr-only-focusable">Přeskočit na hlavní obsah stránky.</a>
-<div class="dn dt-l dt--fixed-l white pv3 pa3 mw8 mr-auto ml-auto">
+<section class="dn dt-l dt--fixed-l white pv3 pa3 mw8 mr-auto ml-auto">
   <div class="dtc-ns tl pl3">
     <a href="https://mapy.cz/?q=50.3838625N%2C+13.2693786E" class="btn btn mode--link mode--link--muted">
       <span class="f5 normal">
@@ -26,7 +26,7 @@
         </svg>
       </span>jampl@jampl.cz</a>
   </div>
-</div>
+</section>
 
 <header role="banner">
   <div class="cover bg-left bg-center-l h-50 h-inherit-l layout-hero layout-hero--horizontal mb5 pa3 tilted-mask">
@@ -87,7 +87,7 @@
 </header>
 
 
-<main>
+<main role="main">
   <section class="layout-feature layout-feature--reverse mv3 z-2 mw9 ml-auto mr-auto" id="main">
     <div class="layout-feature__text slideInUp animated">
       <h2 class="f2-ns f4 mb3-ns mb2 b lh-title">Váš leader pro správu nemovitostí</h2>
@@ -113,11 +113,11 @@
 
     <div class="layout-feature__figure layout-feature__figure--wide">
       <dl class="db dib-l w-auto-l lh-title mr6-l mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">1 000+</dd>
+        <dt class="f3 f-subheadline-l fw6 ml0">1 000+</dt>
         <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Zakázek ročně</dd>
       </dl>
       <dl class="db dib-l w-auto-l lh-title mh3">
-        <dd class="f3 f-subheadline-l fw6 ml0">300+</dd>
+        <dt class="f3 f-subheadline-l fw6 ml0">300+</dt>
         <dd class="f6 fw4 ml0 paragraph-blue slideInUp animated">Spokejných partnerů</dd>
       </dl>
     </div>
@@ -326,49 +326,23 @@
 
       <form class="form-order bg-white pt5-ns pt3 pb4 ph6-ns ph3 mt4 ml-auto mr-auto">
         <div class="group">
-          <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-          <label>Vaše jméno a příjmení</label>
+          <input id="customer-name" type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+          <label for="customer-name">Vaše jméno a příjmení</label>
         </div>
         <div class="group">
-          <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-          <label>Váš e-mail</label>
+          <input id="customer-mail" type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+          <label for="customer-mail">Váš e-mail</label>
         </div>
         <div class="group">
-          <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-          <label>Váš mobil</label>
-        </div>
-
-        <div class="mt3">
-          <details class="form-order-details" role="group">
-            <summary class="form-order-details__summary" role="button">
-              <span class="form-order-details__summary-text pointer dark-gray ">
-                Vyberte typ sluzby
-              </span>
-            </summary>
-
-            <fieldset class="form-order-details__services bn" aria-describedby="vyber-sluzby">
-              <div class="flex items-center mv2">
-                <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
-                <label for="spacejam" class="lh-copy">Vymalovat</label>
-              </div>
-              <div class="flex items-center mv2">
-                <input class="mr2" type="checkbox" id="airbud" value="airbud">
-                <label for="airbud" class="lh-copy">Zvedat telefony</label>
-              </div>
-              <div class="flex items-center mv2">
-                <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
-                <label for="hocuspocus" class="lh-copy">Postavit vec</label>
-              </div>
-            </fieldset>
-
-          </details>
+          <input id="customer-phone" type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+          <label for="customer-phone">Váš mobil</label>
         </div>
 
         <div class="mt4">
           <label class="jampl-label" for="more-detail">
             Zajima vas neco specifickeho?
           </label>
-          <textarea class="jampl-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+          <textarea class="jampl-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
         </div>
 
         <div class="mt4">
@@ -441,7 +415,7 @@
         <h2 class="mt0 mb1 f4 fw7">Sociální sítě</h2>
         <ul t>
           <li>
-            <a href="https://www.facebook.com/jamplpsv/" class="link dim dib mr3 black-70" title="Impossible Labs on Facebook" target="_blank">
+            <a href="https://www.facebook.com/jamplpsv/" class="link dim dib mr3 black-70" title="Impossible Labs on Facebook" target="_blank" aria-label="Facebook JAMPLu">
               <svg class="db w2 h2" data-icon="facebook" viewBox="0 0 32 32" fill="#264796">
               <title >facebook icon</title>
                 <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z">
@@ -450,7 +424,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/jampl-psv-s-r-o/" class="link dim dib black-70" target="_blank">
+            <a href="https://www.linkedin.com/company/jampl-psv-s-r-o/" class="link dim dib black-70" target="_blank" aria-label="LinkedIn JAMPLu">
               <svg class="db w2 h2" x="0px" y="0px" viewBox="0 0 48 48" >
                 <linearGradient gradientUnits="userSpaceOnUse" x1="23.9995"
                   y1="0" x2="23.9995" y2="48.0005" >

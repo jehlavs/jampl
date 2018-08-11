@@ -1009,7 +1009,7 @@ input[type="password"] {
 }
 
 .jobs__open-positions__list li {
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 
@@ -1055,6 +1055,11 @@ input[type="password"] {
 
 
 //about
+.certificate__image {
+  width: 8em;
+  height: 7.5em;
+}
+
 blockquote:before {
     position: absolute;
     font-size: 6em;
@@ -1507,6 +1512,10 @@ height: 5em;
 
 
 //bim
+.bim-logo {
+
+}
+
 .circle {
     display: inline-block;
     border-radius: 100%;
@@ -1591,7 +1600,18 @@ height: 5em;
 }
 
 
+@media (min-width:1400px) {
+    .image-sticker-container {
+    top: 130px !important;
+}
+}
 
+
+@media (min-width:1700px) {
+    .image-sticker-container {
+    top: 110px !important;
+}
+}
 
 .image-sticker-container {
     width: 41.66667%;
