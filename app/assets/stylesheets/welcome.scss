@@ -378,13 +378,25 @@ input[type=radio], input[type=checkbox] {
 
 .customers-example__btn {
   opacity: 0;
-  transition: opacity 0.3s linear;
+  transition: opacity 0.5s linear;
   position: absolute;
   -webkit-transform: translateZ(-30px);
   transform: translateZ(-30px);
-  top: 30%;
-  left: 50%;
+  top: 35%;
+  left: 40%;
   pointer-events: none;
+}
+
+@media (min-width:1700px) {
+  .customers-example__btn {
+    left: 40%;
+  }
+}
+
+@media (min-width:2100px) {
+  .customers-example__btn {
+    left: 43%;
+  }
 }
 
 .customers-example:hover .customers-example__btn {
@@ -1097,20 +1109,6 @@ blockquote:after {
   column-width: 100%;
 }
 
-@media only screen and (max-width: 481px) {
-  #portfolio {
-    margin: 1rem;
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-gap: 1rem;
-    -moz-column-gap: 1rem;
-    column-gap: 1rem;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
-  }
-}
 .tile {
   -webkit-transform: scale(0);
   transform: scale(0);
