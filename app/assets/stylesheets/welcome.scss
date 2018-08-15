@@ -106,7 +106,7 @@ input[type=radio], input[type=checkbox] {
   transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 .btn:hover, .btn:focus {
-  text-decoration: none;
+  text-decoration: underline;
   background-color: $base-color-dark;
   color: $base-color-dark;
   box-shadow: rgba(17, 175, 254, 0.4) 0 3px 20px;
@@ -345,11 +345,11 @@ input[type=radio], input[type=checkbox] {
   background-size: cover;
 }
 
-.account-form-container__footer p a {
+.account-form-container__footer a {
   border-bottom: 1px solid;
 }
 
-.account-form-container__footer p a:hover {
+.account-form-container__footer a:hover {
   text-decoration: none;
   color: $base-color-dark;
 }
@@ -837,6 +837,15 @@ input[type=password] {
   margin-bottom: 3em;
 }
 
+.jobs__open-positions > div span a {
+  border-bottom: 1px solid;
+}
+
+.jobs__open-positions > div span a:hover {
+ text-decoration: none;
+ color: $base-color-dark;
+}
+
 .section-cv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1315,6 +1324,30 @@ blockquote:after {
     opacity: 1;
   }
 }
+
+.bim__header {
+  background: #11998e; background: -webkit-linear-gradient(to right, #38ef7d, #11998e); background: linear-gradient(to right, #38ef7d, #11998e);
+  z-index: 3;
+  opacity: 1;
+}
+
+.fullscreen-bg {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+      opacity: 0.3;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 61px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
 .bim__text .flex-grid__column {
   transition: opacity 0.3s ease, box-shadow 0.2s ease;
   opacity: 0.8;

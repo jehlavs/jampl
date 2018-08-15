@@ -29,7 +29,10 @@
 </div>
 
 <header role="banner">
-  <div class="bim__header" style="background: #11998e; background: -webkit-linear-gradient(to right, #38ef7d, #11998e); background: linear-gradient(to right, #38ef7d, #11998e);">
+  <div class="bim__header">
+    <div class="fullscreen-bg">
+    <%= video_tag "dumbkos.mp4", :width => "100%", :height => "100%", :autoplay => true, :loop => true, :class => "fullscreen-bg__video" %>
+    </div>
     <div class="pb5">
       <nav class="dn dt-m dt-l w-100 mw8 pv3 center"> 
         <div class="dtc v-mid pa3 jampl-logo">
@@ -45,8 +48,8 @@
         <div class="nav-items dtc v-mid tr pa3 fw7">
           <a class="relative hover-white no-underline white dn dib-ns pv2 ph3" href="/welcome/about" >O nás</a> 
           <a class="relative hover-white no-underline white dn dib-ns pv2 ph3" href="/welcome/facility" >Přehled činností</a> 
-          <a class="active relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/bim" >BIM řešení</a> 
-          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/customers" >Zákazníci</a> 
+          <a class="active relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/bim" >3D a BIM</a> 
+          <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/customers" >Reference</a> 
           <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/jobs" >Kariéra</a> 
           <a class="relative hover-white no-underline white dn dib-l pv2 ph3" href="/welcome/contacts" >Kontakt</a> 
         </div>
@@ -70,11 +73,11 @@
         <nav class="header__navigation" style="top: 4rem;">
           <a class="relative no-underline  pv2 ph3" href="/welcome/about" >O nás</a> 
           <a class="relative no-underline  pv2 ph3" href="/welcome/facility" >Přehled činností</a> 
-          <a class="active srelative no-underline  pv2 ph3" href="/welcome/bim" >BIM řešení</a> 
-          <a class="relative no-underline  pv2 ph3" href="/welcome/customers" >Zákazníci</a> 
+          <a class="active srelative no-underline  pv2 ph3" href="/welcome/bim" >3D a BIM</a> 
+          <a class="relative no-underline  pv2 ph3" href="/welcome/customers" >Reference</a> 
           <a class="relative  no-underline  pv2 ph3" href="/welcome/jobs" >Kariéra</a> 
           <a class="relative no-underline pv2 ph3" href="/welcome/contacts" >Kontakt</a> 
-          <a class="relative no-underline base-blue-f pv2 ph3"  href="tel:+420 560 40 40 40" >
+          <a class="relative no-underline base-blue-f pv2 ph3"  href="tel:+420 602 27 86 17" >
             <span class="f5 normal mr3">
               <svg aria-hidden="true" data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-phone fa-w-16" width="18" height="18">
                 <path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z" class=""></path>
@@ -84,8 +87,8 @@
       </div>
       <div class="ph3 mw8 mw9-l center">
         <header class="jobs__text jobs-background" data-jobs-header="">
-          <h1 class="f2 f-subheadline-l fw8 white mt0 mb4 lh-title">BIM reseni</h1>
-          <p class="white f4 measure">Informace o vaší nemovitosti v co <strong>nejkratším čase</strong>.</p>
+          <h1 class="f3 f-subheadline-ns fw8 white mt0 mb4 lh-title">Posuneme vaši nemovitost do informačního věku</h1>
+          <p class="white f4 measure">Mějte svou nemovitost vždy pod kontrolou s využitím <strong>nejmodernějších technologií</strong>.</p>
 
         </header>
       </div>
@@ -97,7 +100,7 @@
   <div class="page-bim__video mb7-ns mb3 db-ns dn">
     <a href="https://www.youtube.com/watch?v=Lp8__-x8BmY" class="page-bim__video--colored" target="_blank">
       <span class="f5 normal white mr3"><svg aria-hidden="true" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-play fa-w-14" width="30" height="30"><path fill="#fff" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" class=""></path></svg></span>
-      <span>Podívat se, jak BIM funguje</span>
+      <span>Co je BIM a jak funguje?</span>
     </a>
 
     <div class="page-bim__video__container">
@@ -124,32 +127,32 @@
                 <div class="text-sticker__inner">
                   <h2 class="f2-ns f4 mb3-ns mb2 b lh-title mt7-ns mt5">Pasportizace budov</h2>
                   <p class="measure paragraph-blue mb7-ns mb5">
-                  Nabízíme vytvoření informačního 3D modelu stavby pro efektivnější správu budovy. Po pasportizaci metodou BIM můžete začít využívat novou technologii informačních 3D modelů a těšit se z výhod, které sebou tato technologie nese. 
+                  Zdokumentujeme skutečný stav svého objektu formou 3D informačního modelu. Tento model nahradí klasické papírové výkresy a poslouží k přehlednému uložení všech důležitých informací o stavbě i jejím vybavení. BIM pasport vám také otevře dveře k využití řady moderních metod a technologií Stavebnictví 4.0.
                   </p>
 
                   <h2 class="f2-ns f4 mb3-ns mb2 b lh-title mt7-ns">Správa budov</h2>
                    <p class="measure paragraph-blue mb7-ns mb5">
-                    Nabízíme software BIM.POINT pro podporu činností při správě budov, který pracuje s BIM modelem. Naši zákazníci tak využívají výhody informačního 3D modelu staveb pro správu nemovitostí.
+                    Využijte možností svého informačního modelu při správě nemovitosti. Evidujte majetek, termíny revizí a údržby, zakládejte důležité dokumenty, vše přehledně ve třech rozměrech s rozsáhlými možnostmi třídění a vyhledávání. Vaše data budou v počítači na stejném místě jako ve skutečnosti.
                   </p>
 
                   <h2 class="f2-ns f4 mb3-ns mb2 b lh-title mt7-ns">Školení a konzultace</h2>
                    <p class="measure paragraph-blue mb7-ns mb5">
-                  Analyzujeme potřeby zákazníka, který chce využívat informační modely BIM. Ať už budovy navrhuje, staví, vlastní nebo provozuje. Nastavujeme procesy pro využití BIM technologií. 
+                  Pomůžeme vám zanalyzovat potřeby zákazníků, kteří chtějí využívat informační modely. Ať už budovy stavíte, navrhujete nebo provozujete, poradíme s výběrem vhodného softwaru a naučíme vás s ním pracovat. Nastavujeme též procesy pro využití BIM technologií.
                   </p>
 
                   <h2 class="f2-ns f4 mb3-ns mb2 b lh-title mt7-ns">Zaměřování pomocí mračen bodů</h2>
                   <p class="measure paragraph-blue mb7-ns mt3">
-                  Pro účely pasportů, rekonstrukcí nebo pro zjištění stávajícího stavu objektů využíváme technologii laser skeneru, který vytváří mračna bodů. Tím od nás získáte velmi rychle miliony informací-bodů o vaší budově.
+                  Váš objekt zaměříme rychle a efektivně laserovým skenerem, který snímá prostorové souřadnice 40 000 bodů za vteřinu a vytváří trojrozměrné mračno bodů. Mračno obsahuje informace o geometrii objektu, především jeho rozměrech. Využití se neomezuje na zaměření objektu, výstup lze přímo vizualizovat a procházet, nebo využít při kontrole průběhu stavby.
                   </p>
 
                   <h2 class="f2-ns f4 mb3-ns mb2 b lh-title mt7-ns">3D vizualizace</h2>
                   <p class="measure paragraph-blue mb7-ns mb5">
-                  Pro naše zákazníky vytváříme digitální prostředí jejich objektů. Díky technologiím, které používáme jsme schopni vytvářet 3D panoramtické vizualizace nebo VR prohlídky budoucích staveb. 3D objekty jsme schopni vytisknout na 3D tiskárně.
+                  Nechte si vytvořit digitální dvojče svého objektu. Připravíme vám panoramatické vizualizace, virtuální prohlídky budoucích staveb s využitím virtuální reality, nebo jen jednoduchou vizualizaci obkladu v koupelně. Objekty vám také rádi vytiskneme na 3D tiskárně.
                   </p>
 
                   <h2 class="f2-ns f4 mb3-ns mb2 b lh-title mt7-ns">Tvorba knihoven BIM</h2>
                   <p class="measure paragraph-blue mb7-ns mb5">
-                  Vyrábíte stavební prvky a chcete držet krok s kokurenty? Chcete, aby návrháři používali vaše výrobky v projektech? Vytváříme 3D objekty reálných výrobků pro využití v BIM aplikaci Revit.
+                  Vyrábíte stavební prvky a chcete držet krok s konkurencí? Chcete, aby návrháři používali vaše výrobky ve svých BIM  projektech? Vytváříme 3D objekty reálných výrobků pro využití v aplikaci Revit.
                   </p>
                 </div>
                 <div class="helper-padder" style="padding-bottom: 350%;">
@@ -285,7 +288,7 @@
         <ul>
           <li class=""><a class="white-90" href="/welcome/about">O nás</a></li>
           <li class=""><a class="white-90" href="/welcome/facility">Přehled činností</a></li>
-          <li class=""><a class="white-90" href="/welcome/bim">BIM řešení</a></li>
+          <li class=""><a class="white-90" href="/welcome/bim">3D a BIM</a></li>
           <li class=""><a class="white-90" href="/welcome/customers">Reference a fotodokumentace</a></li>
           <li class=""><a class="white-90" href="/welcome/jobs">Pracujte pro nás</a></li>
           <li class=""><a class="white-90" href="/welcome/contacts">Kontakty</a></li>
@@ -297,7 +300,6 @@
         <ul>
           <li class=""><a class="white-90" href="/welcome/terms-of-use">Zásady použítí</a></li>
           <li class=""><a class="white-90" href="/privacy">Ochrana osobních dat</a></li>
-          <li class=""><a class="white-90" href="/privacy">Mapa stránek</a></li>
         </ul>
       </div> 
       
