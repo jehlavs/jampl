@@ -1655,17 +1655,19 @@ blockquote:after {
   }
 }
 .facility__header {
-  background: #1e3c72;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2a5298, #1e3c72);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(to right bottom, rgba(38, 71, 150, 0.8), rgba(38, 71, 150, 0.8)), image-url("img-facility-hero.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts__header {
-  background-image: linear-gradient(to right bottom, rgba(38, 71, 150, 0.8), rgba(38, 71, 150, 0.8)), image-url("doodles.png");
+  background-image: linear-gradient(to right bottom, rgba(38, 71, 150, 0.8), rgba(38, 71, 150, 0.8)), image-url("img-contacts-hero.jpg");
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .facility__text {
@@ -1950,7 +1952,6 @@ blockquote:after {
 .header__navigation {
   font-weight: 700;
   text-transform: none;
-  font-size: 16px;
   line-height: 1.25;
   display: none;
   clear: both;
