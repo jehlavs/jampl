@@ -1664,9 +1664,8 @@ blockquote:after {
 }
 
 .contacts__header {
-  background: #4b6cb7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(to right bottom, rgba(38, 71, 150, 0.8), rgba(38, 71, 150, 0.8)), image-url("doodles.png");
+  background-attachment: fixed;
 }
 
 .facility__text {
@@ -1982,7 +1981,7 @@ blockquote:after {
 .page-bim__video {
   max-width: 640px;
   position: relative;
-  margin: -10rem auto 3rem;
+  margin: -8rem auto 3rem;
   background-color: #3b75be;
   border-radius: 6px;
 }
