@@ -4,6 +4,10 @@ $btn-link: #0087ca;
 $base-color-dark: #122248;
 $base-color-paragraph: #6884a7;
 
+$color-success: #008a64;
+
+//content: "✓";
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -50,6 +54,15 @@ input[type=number]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
   margin: 0; 
+}
+
+aside .active {
+  color: $base-color-dark;
+  border-bottom: 1px solid; 
+}
+
+aside .active:hover {
+  text-decoration: none;
 }
 
 .nav-down {
