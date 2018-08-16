@@ -1,11 +1,9 @@
 $base-color: #264796;
-$base-color: #264796;
 $link-color: #5167bb;
 $btn-link: #0087ca;
 $base-color-dark: #122248;
 $base-color-paragraph: #6884a7;
 
-@charset "UTF-8";
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -212,6 +210,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .nav-items > a {
+  text-decoration: none;
+}
+
+.nav-items--dark > a {
   text-decoration: none;
 }
 
@@ -1457,7 +1459,6 @@ blockquote:after {
 }
 
 .bim__header {
-  background-image: linear-gradient(to right bottom, rgba(38, 71, 150, 0.8), rgba(38, 71, 150, 0.8));
   z-index: 3;
 }
 
@@ -1476,7 +1477,7 @@ blockquote:after {
   left: 0;
   width: 100%;
   height: auto;
-  opacity: 0.1;
+  opacity: 0.6;
 }
 
 .bim__text {
