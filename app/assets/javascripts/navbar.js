@@ -5,6 +5,9 @@ var navbarHeight = $('.navbar-hide').outerHeight();
 
 $(window).scroll(function(event){
     didScroll = true;
+    if ($(window).scrollTop() < 150)
+      $('.navbar-hide').removeClass('flex').addClass('dn');
+
 });
 
 setInterval(function() {
