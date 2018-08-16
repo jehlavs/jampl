@@ -1067,12 +1067,20 @@ blockquote:after {
   flex-wrap: wrap;
 }
 
+.team-members-list .exec {
+  position: relative;
+  z-index: 3;
+  border-radius: 100%;
+  width: 139px !important;
+  height: 165px !important;
+}
+
 .team-members-list .member__image {
   position: relative;
-  z-index: 10;
+  z-index: 3;
   border-radius: 100%;
-  width: 165px;
-  height: 165px;
+  width: 170px;
+  height: 170px;
 }
 
 .team-members-list .member__name {
@@ -1245,6 +1253,7 @@ blockquote:after {
   transform: scale(0);
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
+  margin: 5rem 0;
 }
 
 .scale-anm {
