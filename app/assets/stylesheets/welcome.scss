@@ -65,19 +65,26 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 999;
   opacity: 0.8;
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-up {
   top: -40px;
 }
 
-.navbar {
-  display: table !important;
+@media only screen and (max-width: 960px) {
+  .nav-down {
+    display: none !important;
+  }
+
+  .nav-up {
+    display: none !important;
+  }
 }
+
 
 .nav-mobile {
   display: none !important;
@@ -990,17 +997,25 @@ blockquote:before {
   position: absolute;
   font-size: 6em;
   line-height: 1;
-  top: -20px;
-  left: -65px;
+  top: -76px;
+  left: -46px;
   content: "„";
 }
+
+@media only screen and (max-width: 960px) {
+  blockquote:before {
+    top: -52px;
+    left: -35px;
+  }
+}
+
 
 blockquote:after {
   float: right;
   font-size: 6em;
   line-height: 1;
   right: -16px;
-  bottom: -0.6em;
+  bottom: -0.65em;
   content: "”";
   position: absolute;
 }
@@ -1067,6 +1082,16 @@ blockquote:after {
 .team-members-list .member__specialization {
   color: #668ea7;
   font-size: 0.9rem;
+}
+
+.team-members-list .member__specialization a {
+  color: $base-color-dark;
+  border-bottom: 1px solid;
+}
+
+.team-members-list .member__specialization a:hover {
+  color: $base-color-paragraph;
+  text-decoration: none;
 }
 
 .page-about__body {
