@@ -228,6 +228,7 @@ aside .active:hover {
 
 .nav-items--dark > a {
   text-decoration: none;
+  color: $base-color;
 }
 
 .nav-items > a:before {
@@ -347,6 +348,7 @@ aside .active:hover {
     margin-top: 400px;
   }
 }
+
 .footer-main {
   padding: 3.55rem 10% 1.7rem 5%;
   background-color: $base-color;
