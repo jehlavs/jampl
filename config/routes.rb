@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   get '/zasady-pouziti' => 'welcome#terms-of-use'
   get '/kariera' => 'welcome#jobs'
 
-  
+  resources :orders
 end
