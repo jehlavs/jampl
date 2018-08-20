@@ -1,0 +1,3 @@
+class Job < ContactFormPresenter
+
+end

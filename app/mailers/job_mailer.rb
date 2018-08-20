@@ -1,8 +1,8 @@
-class OrderMailer < ApplicationMailer
+class JobMailer < ApplicationMailer
 
-  default to: 'obchod@jampl.cz'
+  default to: 'Prace@jampl.cz'
 
-  def order_mail
+  def job_mail
     @order = Order.new(params)
     @name, @mail, @phone, @detail = @order.name, @order.mail, @order.phone, @order.detail
     mail(from: @order.mail, subject: 'Nový mail z kontaktního formuláře')

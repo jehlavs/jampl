@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get '/kariera' => 'welcome#jobs'
 
   resources :orders
+  resources :jobs
 end
