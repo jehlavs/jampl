@@ -14,6 +14,13 @@ class JobsController <  ApplicationController
     end
   end
 
+  def cv
+    file = params[:job][:cv]
+    path = Rails.root.join('tmp', file.original_filename)
+    File.open(path, "wb") { |f| f.write(file.read) }
+    JobMailer.with(file_path: path.to_s).cv_mail.deliver_later
+  end
+
   private
 
     def job_params
