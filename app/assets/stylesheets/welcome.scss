@@ -6,7 +6,9 @@ $base-color-paragraph: #6884a7;
 
 $color-success: #008a64;
 
-//content: "✓";
+html {
+  overflow-x: hidden;
+}
 
 body {
   -webkit-font-smoothing: antialiased;
