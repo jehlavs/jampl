@@ -19,6 +19,10 @@ class JobsController <  ApplicationController
     path = Rails.root.join('tmp', file.original_filename)
     File.open(path, "wb") { |f| f.write(file.read) }
     JobMailer.with(file_path: path.to_s).cv_mail.deliver_later
+    respond_to do |format|
+      format.html{ redirect_to root_path, notice: t('notice_mail_sent') }
+      format.js
+    end
   end
 
   private
